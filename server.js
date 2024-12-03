@@ -1,3 +1,4 @@
+require('newrelic');
 const http = require('http');
 const express = require('express');
 const basicRouter = require('./routes/basicRoute');
@@ -31,8 +32,8 @@ app.all('*', (req, res, next) => {
     next();
 })
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3009;
 
-app.listen(PORT, '0.0.0.0', () => {
+app.listen(PORT, '127.0.0.1', () => {
     console.log('server is listening now')
 })
