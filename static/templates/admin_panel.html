@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Base</title>
+    <link rel="stylesheet" href="../styles/admin_panel.css">
+</head>
+<body>
+    <header>
+        <input type="text" id="search" placeholder="Search...">
+        <div id="admin-panel"><a href="./static/templates/admin_panel.html">⚙️ Admin Panel</a></div>
+    </header>
+    <aside>
+        <ul id="admin_menu">
+            <li>Add article</li>
+            <li>Delete article</li>
+            <li>Update article</li>
+        </ul>
+    </aside>
+    <div class="create_form">
+        <form method="post">
+            <label for="purpose"></label>
+            <input id="purpose" name="purpose" placeholder="purpose">
+            <label for="command"></label>
+            <input id="command" name="command" placeholder="command">
+            <label for="example"></label>
+            <input id="example" name="example" placeholder="example">
+            <label for="purpose"></label>
+            <input id="comments" name="comments" placeholder="comments">
+            <button id="creare_article" type="submit" data-route="">Submit</button>
+        </form>
+    </div>
+</body>
+<footer>
+
+</footer>
