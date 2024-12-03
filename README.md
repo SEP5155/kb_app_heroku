@@ -1,1 +1,2 @@
-# kb_app_heroku
+# KB_app
+app to keep knowledgebase

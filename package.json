@@ -1,0 +1,23 @@
+{
+  "name": "kb_app",
+  "version": "1.0.0",
+  "description": "Here all knowledge will be stored",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "SEP",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongodb": "^6.10.0",
+    "mongoose": "^5.13.22"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.5.9",
+    "nodemon": "^3.1.7"
+  }
+}
