@@ -8,6 +8,7 @@ const loadTestRouter = require('./routes/loadTestRoute');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const app = express();
+const path = require('path');
 
 dotenv.config({ path: './config.env'});
 
@@ -19,9 +20,10 @@ mongoose.connect(DB).then( () => console.log('DB connected!')).catch(err => cons
 
 const server = http.createServer();
 app.use(express.json());
+app.use(express.static(path.join(__dirname, 'static')));
 
 // app.use('api/v1/home', basicRouter);
-app.use('/', basicRouter);
+// app.use('/', basicRouter);
 app.use('/api/v1/guide/', guideRouter);
 app.use('/api/v1/responses/', responseRouter);
 app.use('/memory-hog/', loadTestRouter);
@@ -36,9 +38,9 @@ app.all('*', (req, res, next) => {
 
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, '0.0.0.0', () => {
-    console.log('server is listening now')
-})
-// app.listen(9999, '127.0.0.1', () => {
+// app.listen(PORT, '0.0.0.0', () => {
 //     console.log('server is listening now')
 // })
+app.listen(9999, '127.0.0.1', () => {
+    console.log('server is listening now')
+})
