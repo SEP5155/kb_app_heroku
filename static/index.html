@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Base</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/article.css">
+    <script src="../scripts/buttons_listener.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <input type="text" id="search" placeholder="Search...">
+        <div id="admin-panel"><a href="../templates/admin_panel.html">⚙️ Admin Panel</a></div>
+        <button id="fetchGuides">Fetch all guides</button>
+        <div id="guidesContainer"></div>
+        <button id="fetchResponses">Fetch all Responses</button>
+        <div id="responsesContainer"></div>
+        <button id="fetchHeavy">Heavy route</button>
+        <div id="heavyContainer"></div>
+    </header>
+
+    <main>
+        <aside>
+            <ul id="menu">
+                <li onclick="toggleSubtopics('topic1')">Topic 1</li>
+                <ul id="topic1" class="subtopic">
+                    <li>Subtopic 1.1</li>
+                    <li>Subtopic 1.2</li>
+                </ul>
+                <li onclick="toggleSubtopics('topic2')">Topic 2</li>
+                <ul id="topic2" class="subtopic">
+                    <li>Subtopic 2.1</li>
+                    <li>Subtopic 2.2</li>
+                </ul>
+            </ul>
+        </aside>
+        <div class="preview_section">
+            <section class="article_section">
+                <div class="breadcrumps">
+                    <span class="breadcrumps__title"><h2>Ansible > commands</h2></span>
+                    <hr>
+                </div>
+                <div class="article_part">Purpose:
+                    <br>
+                    <span class="purpose">ping servers</span>
+                </div>
+                <div class="article_part">Command:
+                    <br>
+                    <span class="command">ping</span>
+                </div>
+                <div class="article_part">Example:
+                    <br>
+                    <span class="example">ansible all -m ping</span>
+                </div>
+                <div class="article_part">Additional info:
+                <br>
+                    <span class="comments">this will work if you have setup config to know what is the inventory file
+                        if it’s not setup use: ansible -I ./hosts.txt all -m ping</span>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer content can be added later -->
+    </footer>
+
+    <script>
+        function toggleSubtopics(topicId) {
+            const subtopics = document.getElementById(topicId);
+            if (subtopics.style.display === "block") {
+                subtopics.style.display = "none";
+            } else {
+                subtopics.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
