@@ -10,6 +10,34 @@ const dotenv = require('dotenv');
 const app = express();
 const path = require('path');
 
+const { PerformanceObserver } = require('perf_hooks');
+const newrelic = require('newrelic');
+
+// 3. Настраиваем логирование GC
+const obs = new PerformanceObserver((items) => {
+    items.getEntries().forEach((entry) => {
+        console.log(`Garbage Collection: Kind=${entry.kind}, Duration=${entry.duration.toFixed(2)}ms`);
+        newrelic.recordCustomEvent('GarbageCollection', {
+            kind: entry.kind,
+            duration: entry.duration.toFixed(2), // ms
+        });
+    });
+});
+obs.observe({ entryTypes: ['gc'] });
+
+// 4. Настраиваем логирование памяти
+setInterval(() => {
+    const memoryUsage = process.memoryUsage();
+
+    newrelic.recordCustomEvent('MemoryUsage', {
+        heapUsed: (memoryUsage.heapUsed / 1024 / 1024).toFixed(2), // MB
+        rss: (memoryUsage.rss / 1024 / 1024).toFixed(2), // MB
+        external: (memoryUsage.external / 1024 / 1024).toFixed(2), // MB
+    });
+
+    console.log('Memory usage metrics sent to New Relic');
+}, 60000);
+
 dotenv.config({ path: './config.env'});
 
 const DB = process.env.DATABASE;
