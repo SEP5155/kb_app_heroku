@@ -1,0 +1,29 @@
+name: Deploy to Heroku
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Клонирование репозитория
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    # 2. Установка Node.js
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18' # Укажите версию Node.js, используемую в проекте
+
+    # 3. Установка зависимостей
+    - name: Install Dependencies
+      run: npm install
+
+    # 4. Запуск тестов
+    - name: Run Tests
+      run: npm test
