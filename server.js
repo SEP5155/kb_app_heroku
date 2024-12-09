@@ -13,6 +13,8 @@ const path = require('path');
 const { PerformanceObserver } = require('perf_hooks');
 const newrelic = require('newrelic');
 
+const MEMORY_THRESHOLD = 0.7; // 70% использования памяти
+
 // 3. Настраиваем логирование GC
 const obs = new PerformanceObserver((items) => {
     items.getEntries().forEach((entry) => {
@@ -24,6 +26,8 @@ const obs = new PerformanceObserver((items) => {
     });
 });
 obs.observe({ entryTypes: ['gc'] });
+
+
 
 // 4. Настраиваем логирование памяти
 setInterval(() => {
@@ -49,7 +53,27 @@ mongoose.connect(DB).then( () => console.log('DB connected!')).catch(err => cons
 const server = http.createServer();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'static')));
+// 2. Логирование памяти с маршрутом при превышении порога
+app.use((req, res, next) => {
+    const memoryUsage = process.memoryUsage();
 
+    const heapUsedPercentage = memoryUsage.heapUsed / memoryUsage.heapTotal; // Использование памяти в %
+    if (heapUsedPercentage > MEMORY_THRESHOLD) {
+        const rssInMB = (memoryUsage.rss / 1024 / 1024).toFixed(2);
+        const heapUsedInMB = (memoryUsage.heapUsed / 1024 / 1024).toFixed(2);
+
+        console.warn(`High memory usage detected! Route: ${req.originalUrl}, RSS: ${rssInMB} MB, Heap Used: ${heapUsedInMB} MB`);
+
+        // Отправка метрики в New Relic
+        newrelic.recordCustomEvent('HighMemoryUsage', {
+            route: req.originalUrl,
+            heapUsed: heapUsedInMB,
+            rss: rssInMB,
+        });
+    }
+
+    next();
+});
 // app.use('api/v1/home', basicRouter);
 // app.use('/', basicRouter);
 app.use('/api/v1/guide/', guideRouter);
