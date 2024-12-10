@@ -54,23 +54,34 @@ const server = http.createServer();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'static')));
 // 2. Логирование памяти с маршрутом при превышении порога
+// Middleware для логирования памяти
 app.use((req, res, next) => {
-    const memoryUsage = process.memoryUsage();
+    const startMemoryUsage = process.memoryUsage(); // Сохраняем начальное состояние памяти
 
-    const heapUsedPercentage = memoryUsage.heapUsed / memoryUsage.heapTotal; // Использование памяти в %
-    if (heapUsedPercentage > MEMORY_THRESHOLD) {
-        const rssInMB = (memoryUsage.rss / 1024 / 1024).toFixed(2);
-        const heapUsedInMB = (memoryUsage.heapUsed / 1024 / 1024).toFixed(2);
+    res.on('finish', () => {
+        // Сохраняем состояние памяти после обработки запроса
+        const endMemoryUsage = process.memoryUsage();
 
-        console.warn(`High memory usage detected! Route: ${req.originalUrl}, RSS: ${rssInMB} MB, Heap Used: ${heapUsedInMB} MB`);
+        // Рассчитываем разницу в памяти
+        const heapUsedChange = ((endMemoryUsage.heapUsed - startMemoryUsage.heapUsed) / 1024 / 1024).toFixed(2); // MB
+        const rssChange = ((endMemoryUsage.rss - startMemoryUsage.rss) / 1024 / 1024).toFixed(2); // MB
 
-        // Отправка метрики в New Relic
+        const heapUsedInMB = (endMemoryUsage.heapUsed / 1024 / 1024).toFixed(2); // MB
+        const rssInMB = (endMemoryUsage.rss / 1024 / 1024).toFixed(2); // MB
+
+        console.log(`Memory usage for route: ${req.originalUrl}`);
+        console.log(`Heap Used: ${heapUsedInMB} MB (Change: ${heapUsedChange} MB)`);
+        console.log(`RSS: ${rssInMB} MB (Change: ${rssChange} MB)`);
+
+        // Отправка данных в New Relic
         newrelic.recordCustomEvent('HighMemoryUsage', {
             route: req.originalUrl,
             heapUsed: heapUsedInMB,
             rss: rssInMB,
+            heapUsedChange, // Разница в heap
+            rssChange, // Разница в RSS
         });
-    }
+    });
 
     next();
 });
