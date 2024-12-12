@@ -5,7 +5,7 @@ module.exports = () => {
     setInterval(() => {
         const memoryUsage = process.memoryUsage();
     
-        newrelic.recordustomEvent('MemoryUsage', {
+        newrelic.recordcustomEvent('MemoryUsage', {
             heapUsed: (memoryUsage.heapUsed / 1024 / 1024).toFixed(2), // MB
             rss: (memoryUsage.rss / 1024 / 1024).toFixed(2), // MB
             external: (memoryUsage.external / 1024 / 1024).toFixed(2), // MB
