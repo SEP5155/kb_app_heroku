@@ -1,18 +1,18 @@
 const newrelic = require('newrelic');
 const http = require('http');
 const express = require('express');
-const MEMORY_THRESHOLD = 0.7; // 70% использования памяти
+const MEMORY_THRESHOLD = 0.7; // 70% of memory use
 
-// 2. Логирование памяти с маршрутом при превышении порога
-// Middleware для логирования памяти
+// 2. Memory logging with route when threshold is exceeded
+// Middleware for memory logging
 module.exports = (req, res, next) => {
-    const startMemoryUsage = process.memoryUsage(); // Сохраняем начальное состояние памяти
+    const startMemoryUsage = process.memoryUsage(); // We save the initial state of memory
 
     res.on('finish', () => {
-        // Сохраняем состояние памяти после обработки запроса
+        // Saving the memory state after processing a request
         const endMemoryUsage = process.memoryUsage();
 
-        // Рассчитываем разницу в памяти
+        // Calculating the difference in memory
         const heapUsedChange = ((endMemoryUsage.heapUsed - startMemoryUsage.heapUsed) / 1024 / 1024).toFixed(2); // MB
         const rssChange = ((endMemoryUsage.rss - startMemoryUsage.rss) / 1024 / 1024).toFixed(2); // MB
 
@@ -23,13 +23,13 @@ module.exports = (req, res, next) => {
         console.log(`Heap Used: ${heapUsedInMB} MB (Change: ${heapUsedChange} MB)`);
         console.log(`RSS: ${rssInMB} MB (Change: ${rssChange} MB)`);
 
-        // Отправка данных в New Relic
+        // Sending data to New Relic
         newrelic.recordCustomEvent('HighMemoryUsage', {
             route: req.originalUrl,
             heapUsed: heapUsedInMB,
             rss: rssInMB,
-            heapUsedChange, // Разница в heap
-            rssChange, // Разница в RSS
+            heapUsedChange, // Difference in heap
+            rssChange, // Difference in RSS
         });
     });
 

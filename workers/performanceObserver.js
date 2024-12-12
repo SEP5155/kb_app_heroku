@@ -1,7 +1,7 @@
 const { PerformanceObserver } = require('perf_hooks');
 const newrelic = require('newrelic');
 
-// 3. Настраиваем логирование GC
+// 3. Setup GC
 module.exports = () => {
     const obs = new PerformanceObserver((items) => {
         items.getEntries().forEach((entry) => {
