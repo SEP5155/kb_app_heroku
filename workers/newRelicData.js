@@ -9,7 +9,8 @@ module.exports = () => {
             heapUsed: parseFloat((memoryUsage.heapUsed / 1024 / 1024).toFixed(2)),
             rss: parseFloat((memoryUsage.rss / 1024 / 1024).toFixed(2)),
             external: parseFloat((memoryUsage.external / 1024 / 1024).toFixed(2)),
-        }).log('Memory usage metrics sent to New Relic');
+        })
+        console.log('Memory usage metrics sent to New Relic');
     }, 60000);
 } 
 
