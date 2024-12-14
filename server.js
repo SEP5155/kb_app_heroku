@@ -15,7 +15,7 @@ const path = require('path');
 
 
 if (process.env.ENVIRONMENT === "production") {
-    gcObserver();
+    // gcObserver();
     pushMemUseLogs();
 }
 
