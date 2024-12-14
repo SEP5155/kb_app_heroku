@@ -14,10 +14,10 @@ const app = express();
 const path = require('path');
 
 
-if (process.env.ENVIRONMENT === "production") {
-    // gcObserver();
-    pushMemUseLogs();
-}
+// if (process.env.ENVIRONMENT === "production") {
+//     // gcObserver();
+//     pushMemUseLogs();
+// }
 
 
 dotenv.config({ path: './config.env'});
