@@ -22,9 +22,9 @@ if (process.env.ENVIRONMENT === "production") {
 
 dotenv.config({ path: './config.env'});
 
-const DB = process.env.DATABASE;
-// const DB = process.env.DATABASE.replace('<PASSWORD>', process.env.DB_PASSWORD);
-console.log(DB);
+// const DB = process.env.DATABASE;
+// // const DB = process.env.DATABASE.replace('<PASSWORD>', process.env.DB_PASSWORD);
+// console.log(DB);
 
 mongoose.connect(DB).then( () => console.log('DB connected!')).catch(err => console.error('Connection error:', err));;
 
@@ -34,7 +34,7 @@ app.use(express.static(path.join(__dirname, 'static')));
 
 // app.use('api/v1/home', basicRouter);
 // app.use('/', basicRouter);
-// app.use(catchReqMemUse);
+app.use(catchReqMemUse);
 app.use('/api/v1/guide/', guideRouter);
 app.use('/api/v1/responses/', responseRouter);
 app.use('/memory-hog/', loadTestRouter);
