@@ -14,10 +14,10 @@ const app = express();
 const path = require('path');
 
 
-// if (process.env.ENVIRONMENT === "production") {
-//     // gcObserver();
-//     pushMemUseLogs();
-// }
+if (process.env.ENVIRONMENT === "production") {
+    // gcObserver();
+    pushMemUseLogs();
+}
 
 
 dotenv.config({ path: './config.env'});
@@ -34,7 +34,7 @@ app.use(express.static(path.join(__dirname, 'static')));
 
 // app.use('api/v1/home', basicRouter);
 // app.use('/', basicRouter);
-app.use(catchReqMemUse);
+// app.use(catchReqMemUse);
 app.use('/api/v1/guide/', guideRouter);
 app.use('/api/v1/responses/', responseRouter);
 app.use('/memory-hog/', loadTestRouter);
