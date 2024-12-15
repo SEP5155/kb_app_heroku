@@ -1,6 +1,6 @@
 
 exports.memoryHogHard = (req, res) => {
-    const size = 5000000; // Размер массива (50 миллионов элементов)
+    const size = 1500000; // Размер массива (50 миллионов элементов)
     const largeArray = new Array(size);
 
     // Заполняем массив большим количеством данных
