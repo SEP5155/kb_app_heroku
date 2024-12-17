@@ -34,7 +34,9 @@ app.use(express.static(path.join(__dirname, 'static')));
 
 // app.use('api/v1/home', basicRouter);
 // app.use('/', basicRouter);
-app.use(catchReqMemUse);
+if (process.env.ENVIRONMENT === 'production') {
+    app.use(catchReqMemUse);
+}
 app.use('/api/v1/guide/', guideRouter);
 app.use('/api/v1/responses/', responseRouter);
 app.use('/memory-hog/', loadTestRouter);
