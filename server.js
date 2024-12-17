@@ -6,6 +6,7 @@ const pushMemUseLogs = require('./workers/newRelicData');
 const catchReqMemUse = require('./middleware/catchReqMemUse');
 const basicRouter = require('./routes/basicRoute');
 const guideRouter = require('./routes/guideRoute');
+const topicRouter = require('./routes/topicRoute');
 const responseRouter = require('./routes/responseRoute');
 const loadTestRouter = require('./routes/loadTestRoute');
 const mongoose = require('mongoose');
@@ -37,6 +38,7 @@ app.use(express.static(path.join(__dirname, 'static')));
 if (process.env.ENVIRONMENT === 'production') {
     app.use(catchReqMemUse);
 }
+app.use('/api/v1/topics/', topicRouter);
 app.use('/api/v1/guide/', guideRouter);
 app.use('/api/v1/responses/', responseRouter);
 app.use('/memory-hog/', loadTestRouter);
