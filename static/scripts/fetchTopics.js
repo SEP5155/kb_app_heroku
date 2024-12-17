@@ -9,7 +9,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             menu.innerHTML = topics.data
                 .map((el) => `
-                    <li class='topic ${el}'>${el}</li>
+                    <li id='${el}' class='topic'>
+                        <span>${el}</span>
+                        <ul class="subtopic"></ul>
+                    </li>
+                    
                     `)
                 .join('');
             
@@ -18,4 +22,37 @@ document.addEventListener('DOMContentLoaded', async () => {
             console.warn(err);
         }
     }
+
+    const topicMenu = document.querySelectorAll('#topics_menu .topic');
+    console.log(topicMenu);
+
+    topicMenu.forEach(menu => {
+        menu.addEventListener('click', async function () {
+            console.log('clicked');
+            const subMenu = document.querySelector(`#${this.id} > ul`);
+            console.log(subMenu);
+            const route = this.id === 'responses' ? '/api/v1/responses/' :
+                            this.id === 'guides' ? '/api/v1/guide' : '';
+            
+            console.log(route);
+                    
+            const response = await fetch(route);
+            if(!response.ok) throw new Error('Cannot get topic data');
+        
+            const subTopic = await response.json();
+
+            subMenu.innerHTML = 
+            subTopic.guides.map((el) => `
+                <li>${el.technology}</li>
+            `)
+            .join('');
+            console.log(subTopic);
+        
+        
+        })
+    })
 })
+
+
+
+

@@ -39,10 +39,10 @@ aside ul li {
 aside ul li:hover {
     background-color: #555;
 }
-aside ul .subtopic {
+/* aside ul .subtopic {
     padding-left: 20px;
     display: none;
-}
+} */
 main {
     flex: 1;
     padding: 20px;
@@ -56,4 +56,7 @@ footer {
 .preview_section {
     text-align: center;
     width: 100%;
+}
+.subtopic {
+    display: block;
 }
