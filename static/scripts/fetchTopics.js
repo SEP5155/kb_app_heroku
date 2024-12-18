@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             subMenu.innerHTML = 
             subTopic.guides.map((el) => `
-                <li>${el.technology}</li>
+                <li data-id="${el._id}" class="subtopic-item">${el.technology}</li>
             `)
             .join('');
             console.log(subTopic);
