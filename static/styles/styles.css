@@ -28,10 +28,10 @@ aside {
     padding: 15px;
     overflow-y: auto;
 }
-aside ul {
+/* aside ul {
     list-style: none;
     padding: 0;
-}
+} */
 aside ul li {
     padding: 10px;
     cursor: pointer;
