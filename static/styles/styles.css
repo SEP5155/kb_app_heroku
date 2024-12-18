@@ -60,3 +60,9 @@ footer {
 .subtopic {
     display: block;
 }
+.subtopic {
+    display: none;
+}
+.subtopic.active {
+    display: block;
+}

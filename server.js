@@ -37,7 +37,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'static')));
 
 // app.use('api/v1/home', basicRouter);
-// app.use('/', basicRouter);
+app.use('/', basicRouter);
 if (process.env.ENVIRONMENT === 'production') {
     app.use(catchReqMemUse);
 }

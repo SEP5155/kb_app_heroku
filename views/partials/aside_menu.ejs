@@ -1,10 +1,24 @@
 <aside>
     <ul id="topics_menu">
-        <li id='${el}' class='topic'>
-            <span>${el}</span>
-            <ul class="subtopic">
-                <li data-id="${el._id}" class="subtopic-item">${el.technology}</li>
-            </ul>
-        </li>
+        <% topicNames.forEach(item => { %>
+            <li id="<%= item %>" class="topic">
+                <span><%= item %></span>
+                <ul class="subtopic">
+                    <% if (item === "guides") { %>
+                        <% guides.forEach(el => { %>
+                            <li data-id="<%= el._id %>" class="subtopic-item">
+                                <%= el.technology %>
+                            </li>
+                        <% }) %>
+                    <% } else if (item === "responses") { %>
+                        <% responses.forEach(el => { %>
+                            <li data-id="<%= el._id %>" class="subtopic-item">
+                                <%= el.subCategory %>
+                            </li>
+                        <% }) %>
+                    <% } %>
+                </ul>
+            </li>
+        <% }) %>
     </ul>
 </aside>
