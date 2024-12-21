@@ -2,22 +2,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const articleBody = document.querySelector('.article_section');
 
     const subMenuItem = document.querySelectorAll('.subtopic-item');
+    const nestedMenuItem = document.querySelectorAll('.netsted_menu_item');
+
+    // const filteredTopics = Array.from(new Map(guidesData.map(item => [item.technology, item])).values());
+    // console.log(filteredTopics);
 
     // Обработчик кликов для подменю
-    subMenuItem.forEach(item => {
+    nestedMenuItem.forEach(item => {
         item.addEventListener('click', (event) => {
             event.stopPropagation(); // Остановить всплытие события
             console.log('Submenu item clicked:', item.dataset.id);
         });
     });
 
-    subMenuItem.forEach(item => {
+    nestedMenuItem.forEach(item => {
         item.addEventListener('click', () => {
         const id = item.getAttribute('data-id');
         let selectedData;
         let topic;
         
-        if (item.parentElement.parentElement.id === 'guides') {
+        if (item.parentElement.parentElement.parentElement.parentElement.id === 'guides') {
             selectedData = guidesData.find(guide => guide._id === id);
             topic = 'guides'
         } else if (item.parentElement.parentElement.id === 'responses') {

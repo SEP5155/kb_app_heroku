@@ -5,15 +5,32 @@
                 <span><%= item %></span>
                 <ul class="subtopic">
                     <% if (item === "guides") { %>
-                        <% guides.forEach(el => { %>
-                            <li data-id="<%= el._id %>" class="subtopic-item">
-                                <%= el.technology %>
+                        <% filteredGuides.forEach(el => { %>
+                            <li id="<%= el.technology %>" class="subtopic-item">
+                                <span><%= el.technology %></span>
+                                <% guides.forEach(guide => { %>
+                                    
+                                    <% if (guide.technology === el.technology) { %>
+                                    <ul class="nested_menu">
+                                        <li class="netsted_menu_item" id="<%- guide.purpose %>" data-id="<%- guide._id %>"><%- guide.purpose %></li>
+                                    </ul>
+                                    <% } %>
+                                    
+                               <% }) %>
                             </li>
                         <% }) %>
                     <% } else if (item === "responses") { %>
-                        <% responses.forEach(el => { %>
-                            <li data-id="<%= el._id %>" class="subtopic-item">
-                                <%= el.subCategory %>
+                        <% console.log(responses) %>
+                        <% filteredResponses.forEach(el => { %>
+                            <li id="<%= el.subCategory %>" class="subtopic-item">
+                                <span><%= el.subCategory %></span>
+                                    <% responses.forEach(response => { %> 
+                                        <% if (response.subCategory === el.subCategory) { %>
+                                            <ul class="nested_menu">
+                                                <li id="<%- response.topic %>"><%- response.topic %></li>
+                                            </ul>
+                                        <% }%>     
+                                   <% }) %>
                             </li>
                         <% }) %>
                     <% } %>
