@@ -32,13 +32,18 @@ aside {
     list-style: none;
     padding: 0;
 } */
-aside ul li {
+aside ul li > span,
+.netsted_menu_item {
     padding: 10px;
     cursor: pointer;
 }
-aside ul li:hover {
+aside ul li span:hover {
+    background-color: hsl(0, 0%, 33%);
+}
+.nested_menu li:hover {
     background-color: #555;
 }
+
 /* aside ul .subtopic {
     padding-left: 20px;
     display: none;
@@ -58,11 +63,26 @@ footer {
     width: 100%;
 }
 .subtopic {
-    display: block;
-}
-.subtopic {
     display: none;
 }
 .subtopic.active {
     display: block;
+}
+.nested_menu {
+    display: none;
+}
+.nested_menu.active {
+    display: block;
+}
+#topics_menu {
+    padding-left: 1px;
+}
+.side_menu {
+    width: 50%;
+}
+.subtopic-item {
+    padding: 5px;
+}
+.subtopic {
+    padding-top: 5px;
 }

@@ -1,0 +1,626 @@
+{
+    "CSS": [
+        {
+            "Unnamed: 0": "Standart styles in global.css",
+            "Unnamed: 1": "@url('link from google fonts')'",
+            "Unnamed: 2": "підключаємо шрифти"
+        },
+        {
+            "Unnamed: 0": "",
+            "Unnamed: 1": "* {margin: 0;padding: 0;box-sizing: border-box;}",
+            "Unnamed: 2": "скидуємо розміри"
+        },
+        {
+            "Unnamed: 0": "",
+            "Unnamed: 1": ":root {scroll-behavior: smooth;}",
+            "Unnamed: 2": "плавна прокрутка"
+        },
+        {
+            "Unnamed: 0": "",
+            "Unnamed: 1": "img {display: block;width: 100%;}",
+            "Unnamed: 2": "щоб картинка підлаштовувалась під контейнер"
+        },
+        {
+            "Unnamed: 0": "",
+            "Unnamed: 1": "--text-color: color code'",
+            "Unnamed: 2": "initialize variable in CSS"
+        },
+        {
+            "Unnamed: 0": "",
+            "Unnamed: 1": "color: var(--text-color);",
+            "Unnamed: 2": "how to use variable"
+        },
+        {
+            "Unnamed: 0": "flexboxx",
+            "Unnamed: 1": "flex: 1;",
+            "Unnamed: 2": "gives full range of available space to element"
+        },
+        {
+            "Unnamed: 0": "",
+            "Unnamed: 1": "justifi-content: space-around",
+            "Unnamed: 2": "throw element to share all availble space"
+        },
+        {
+            "Unnamed: 0": "background",
+            "Unnamed: 1": "background-size: cover;",
+            "Unnamed: 2": "cover range"
+        },
+        {
+            "Unnamed: 0": "",
+            "Unnamed: 1": "background-position:center;",
+            "Unnamed: 2": "make it in center"
+        },
+        {
+            "Unnamed: 0": "",
+            "Unnamed: 1": "background-attachment: fixed",
+            "Unnamed: 2": "make background not to move"
+        },
+        {
+            "Unnamed: 0": "",
+            "Unnamed: 1": "background: linear-gradient( rgba(0,0,0,0.5), rgba (0,0,0,0.5) ),url(../img/test-pic.svg);",
+            "Unnamed: 2": "here we set half transparent background and picture which is gona be darkened"
+        },
+        {
+            "Unnamed: 0": "grid",
+            "Unnamed: 1": "display: grid;gab: 5px;grid-template-columns: 1fr 1fr;",
+            "Unnamed: 2": "grid-template-columns: 1fr 1fr; mean you will have 2 columns dividing vailable space to 50% for each element"
+        }
+    ],
+    "Chat_scripts": [
+        {
+            "TYPE": "Greeting",
+            "TEXT": "Hello There, thank you for reaching out to us!"
+        },
+        {
+            "TYPE": "Escalate",
+            "TEXT": "Unfortunately I cannot figure this out at this moment, so I have to escalate it to our expert and you will get an update on this during few hours (3-6 hours). Expert will start shift at 10AM EST."
+        },
+        {
+            "TYPE": "get info",
+            "TEXT": "Before we start can you share your store URL please"
+        },
+        {
+            "TYPE": "ask for access",
+            "TEXT": "We may need an access to your store admin panel to be able to troubleshoot, I'm sending you the request so please approve it if you don't mind."
+        },
+        {
+            "TYPE": "need more help?",
+            "TEXT": "Please tell if there is anything else I can help you with?"
+        },
+        {
+            "TYPE": "",
+            "TEXT": "You are welcome, was glad to assist you today!"
+        },
+        {
+            "TYPE": "",
+            "TEXT": "Please let us know if there is anything else we may help you with."
+        },
+        {
+            "TYPE": "prices did not change response",
+            "TEXT": "Hello There, thank you for reaching out to us!We have completed your update several hours ago and now your store should be good to go.Please let us know if there is anything else we may help you with.Thank you,Serhii"
+        }
+    ],
+    "Installer_macroses": [
+        {
+            "NAME": "HIDE QUICK",
+            "TEXT": "Just one note about your store. Based on how your theme handles variant selection we have to hide the Quick View button from wholesale customers on collection pages. Retail customers will not be affected, but let us know if you have any questions about this.<br><br>"
+        },
+        {
+            "NAME": "ACCESS REQ CONFLICTS",
+            "TEXT": "Hello! It looks like you asked for some help with the install process. Once you approve this request we'll check things out for you and let you know if we find any issues. Let us know if you have any questions. Thanks!"
+        },
+        {
+            "NAME": "HIDE FEATURED PRODUCT",
+            "TEXT": "Just one note about your theme. Based on how your theme builds the featured product on the homepage we can't change this price to wholesale. We went ahead and hid the featured product from wholesale customers. Retail will not be affected, but let us know if you have any questions about this. <br><br>"
+        },
+        {
+            "NAME": "REQ COLLAB CODE",
+            "TEXT": "Hello, My name is Serhii and I'm writing you on behalf of Wholesale Gorilla Team.I was trying to request access to your store but unfortunately I am in need of a, \"Collaborator request code.\" If you could send that over I would greatly appreciate it. Store URL:  Thank you,Serhii"
+        },
+        {
+            "NAME": "HIDE SEARCH PRICES and HIDE QUICK",
+            "TEXT": "Just a couple of notes about your theme. Based on how your theme handles variant selection we have to hide the Quick View button from wholesale customers on collection pages. The same is true for the prices in the search dropdown that appears as you type into the search bar. We aren't able to get the data we need to change these prices to wholesale so we went ahead and hid these prices from wholesale customers (they can still view prices on the search results page). Retail customers will not be affected by either of these, but let us know if you have any questions about this.<br><br>"
+        },
+        {
+            "NAME": "HIDE SUBSCRIPTIONS",
+            "TEXT": "Just one note about your theme. We went ahead and hid the subscription widget on product page from wholesale customers, since we are not compatible with any types of subscriptions currently. Retail will not be affected, but let us know if you have any questions about this. <br><br>"
+        },
+        {
+            "NAME": "HIDE SEARCH PRICES",
+            "TEXT": "Just one note about your store. Based on how your theme builds the AJAX search feature we can't change the prices in the search popup to wholesale. We went ahead and hid these prices from wholesale customers. Retail will not be affected, but let us know if you have any questions about this.<br><br>"
+        },
+        {
+            "NAME": "NEW ACCOUNTS",
+            "TEXT": "One thing to note, because you are using \"New Customer Accounts\" in Shopify things will work a little differently. We recommend switching to Classic Customer Accounts to avoid any of the following issues, but, it is not required. Your customers do not land on an /account page that is part of your online store, so we have nowhere to link our Quick Order Form. If you want your wholesale customers to have easy access to that you will have to link it to one of your menus. Here is guide for linking our pages to your menus - [How To Add the Signup & Login Forms to Your Shop]<a href = 'https://wholesalegorilla.zendesk.com/hc/en-us/articles/360060603611-How-To-Add-the-Signup-Login-Forms-to-Your-Shop'> How to add our forms to your shop</a>You may end up converting a lot of your customers to wholesale manually if they have every logged into your store. Each time someone accesses your store with a valid email address a customer profile is built. If someone with an existing profile tries to sign up for wholesale it will not let them as their email is already taken. Here is al link to manually create wholesale accounts - <a href = 'https://wholesalegorilla.zendesk.com/hc/en-us/articles/360060165892-Customer-Created-Wholesale-Accounts'>Customer Created Wholesale Accounts</a> Other than that you are good to go! Please let us know if you decide to switch to Classic Accounts, and we will adjust our installation for that option for you."
+        },
+        {
+            "NAME": "HIDE SEARCH PRICES",
+            "TEXT": "Just one note about your store. Based on how your theme builds the AJAX search feature we can't change the prices in the search popup to wholesale. We went ahead and hid these prices from wholesale customers. Retail will not be affected, but let us know if you have any questions about this.<br><br>"
+        }
+    ],
+    "GIT": [
+        {
+            "Command/Case": "git help <command>",
+            "Explanation": "explanation of command"
+        },
+        {
+            "Command/Case": "git config --list",
+            "Explanation": "shows full config"
+        },
+        {
+            "Command/Case": "git config --global core.editor notepad.exe",
+            "Explanation": "change default text editor"
+        },
+        {
+            "Command/Case": "git commit -a -m \"your comment\"",
+            "Explanation": "git add and git commit in 1 line"
+        },
+        {
+            "Command/Case": "git log",
+            "Explanation": "list of commits"
+        },
+        {
+            "Command/Case": "git checkout <uui of commit>",
+            "Explanation": "move to previous commit state"
+        },
+        {
+            "Command/Case": "git checkout master",
+            "Explanation": "move to master current state"
+        },
+        {
+            "Command/Case": "git branch",
+            "Explanation": "branches list"
+        },
+        {
+            "Command/Case": "git branch name",
+            "Explanation": "create new branch"
+        },
+        {
+            "Command/Case": "git switch name",
+            "Explanation": "switch to another branch"
+        },
+        {
+            "Command/Case": "git merge b1(name of secondary branch)",
+            "Explanation": "merge changes from other branch"
+        },
+        {
+            "Command/Case": "git branch -m name",
+            "Explanation": "change branch name (you should be at this branch while renaming)"
+        },
+        {
+            "Command/Case": "git branch -d name",
+            "Explanation": "delete branch (you must not be on this branch while deleting)"
+        }
+    ],
+    "LInux_COMMANDS": [
+        {
+            "purpose": "check OS version",
+            "Command": "lsb_release -a",
+            "options": "",
+            "comments": ""
+        },
+        {
+            "purpose": "check all user that have some app",
+            "Command": "cat /etc/passwd | grep bash",
+            "options": "",
+            "comments": ""
+        },
+        {
+            "purpose": "show open ports",
+            "Command": "sudo netstat -tuln",
+            "options": "t stands for TCP ports, u for UDP ports, l for numbers, n номера в числовом формате",
+            "comments": ""
+        }
+    ],
+    "SonarQube": [
+        {
+            "purpose": "Sonarqube reuired system to be adjusted to run all the processes correctly",
+            "Command": "sysctl -w vm.max_map_count=524288sysctl -w fs.file-max=131072ulimit -n 131072ulimit -u 8192",
+            "options": "",
+            "comments": ""
+        },
+        {
+            "purpose": "Install Java",
+            "Command": "apt install openjdk-17-jdk -y",
+            "options": "",
+            "comments": ""
+        },
+        {
+            "purpose": "download naven from official repo",
+            "Command": "wget https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.9.2/apache-maven-3.9.2-bin.tar.gz",
+            "options": "",
+            "comments": ""
+        },
+        {
+            "purpose": "unarchive maven",
+            "Command": "tar xzf apache-maven-3.9.2-bin.tar.gz",
+            "options": "",
+            "comments": ""
+        },
+        {
+            "purpose": "make mave as system software",
+            "Command": "mkdir /usr/share/mavencd apache-maven-3.9.2cp -R * /usr/share/maventouch /etc/profile.d/maven.shecho 'export M2_HOME=/usr/share/maven' >>/etc/profile.d/maven.shecho 'export MAVEN_HOME=/usr/share/maven' >>/etc/profile.d/maven.shecho 'export PATH=${M2_HOME}/bin:${PATH}' >>/etc/profile.d/maven.shsource /etc/profile.d/maven.sh mvn -version ",
+            "options": "",
+            "comments": ""
+        },
+        {
+            "purpose": "install sonar-scanner",
+            "Command": "wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472-linux.zip",
+            "options": "",
+            "comments": ""
+        },
+        {
+            "purpose": "unzip scanner",
+            "Command": "unzip sonar-scanner-cli-4.6.2.2472-linux.zip -d /opt/sonar-scanner",
+            "options": "",
+            "comments": ""
+        },
+        {
+            "purpose": "add scanner to ENV",
+            "Command": "echo 'export PATH=$PATH:/opt/sonar-scanner/bin' >> ~/.bashrcsource ~/.bashrc",
+            "options": "",
+            "comments": ""
+        }
+    ],
+    "FLY_IO": [
+        {
+            "Command": "fly auth login",
+            "description": "Login to fly,io",
+            "additional notes": "this will redirect you to browser to login if you are on windows"
+        },
+        {
+            "Command": "fly launch",
+            "description": "deploy the app from local repo",
+            "additional notes": "That should be a folder with yor app"
+        },
+        {
+            "Command": "fly auth token",
+            "description": "generate token to access yor acc on fly",
+            "additional notes": "token gives access to all apps on fly"
+        },
+        {
+            "Command": "fly ssh console -a <app_name>",
+            "description": "connect app via terminal through ssh",
+            "additional notes": ""
+        },
+        {
+            "Command": "fly machines list",
+            "description": "check mashines list",
+            "additional notes": ""
+        },
+        {
+            "Command": "fly apps list",
+            "description": "check apps list",
+            "additional notes": ""
+        },
+        {
+            "Command": "fly status",
+            "description": "check status of current of (depends where you run this from)",
+            "additional notes": ""
+        },
+        {
+            "Command": "fly logs",
+            "description": "logs of app in real time",
+            "additional notes": ""
+        },
+        {
+            "Command": "fly restart",
+            "description": "Перезапускает все инстансы приложения",
+            "additional notes": "\"--app <app_name>\" — Указывает которое нужно перезапустить"
+        },
+        {
+            "Command": "fly scale count 2 ",
+            "description": "Увеличивает или уменьшает количество виртуальных машин, работающих для твоего приложения.",
+            "additional notes": "\"--app <app_name>\" <count> — Количество виртуальных машин, которые ты хочешь запустить.count 0 - остановить приложение на Fly.io, но при этом не удалять его, ты можешь масштабировать количество виртуальных машин до нуля (scale to zero)."
+        },
+        {
+            "Command": "fly destroy",
+            "description": "Удаляет приложение и все связанные с ним ресурсы (виртуальные машины, базы данных, volumes и т.д.).",
+            "additional notes": ""
+        }
+    ],
+    "GIT-ACTIONS": [
+        {
+            "code template": "built in actions",
+            "name: CI/CD Pipeline# Триггеры, на которые реагирует workflowon:  push:    branches:      - main      - dev  pull_request:    branches:      - main  workflow_dispatch: # Для ручного запуска workflow# Основная работа (job)jobs:  build:    runs-on: ubuntu-latest  # Операционная система для выполнения работы    steps:      # Проверить исходный код из репозитория      - name: Checkout code        uses: actions/checkout@v4      # Настроить Node.js среду (или Python, Ruby и т.д.)      - name: Set up Node.js        uses: actions/setup-node@v3        with:          node-version: '16'  # Можно указать любую версию      # Установить зависимости      - name: Install dependencies        run: npm install      # Выполнить тесты      - name: Run tests        run: npm test      # Сборка проекта (например, для фронтенд приложений)      - name: Build the project        run: npm run build      # Загрузить артефакты сборки      - name: Upload artifacts        uses: actions/upload-artifact@v3        with:          name: build          path: ./build      # Деплой на сервер через SSH (используя пароль из секретов)      - name: Deploy to server        run: |          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no user@server_ip \"          cd /path/to/project &&          git pull origin main &&          npm install &&          npm run start          \"      # Отправить уведомление в Slack после успешного деплоя (пример с webhook)      - name: Notify Slack        uses: slackapi/slack-github-action@v1.23.0        with:          payload: '{\"text\":\"Deployment to production was successful!\"}'        env:          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}      # Архивировать и удалить артефакты после завершения      - name: Clean up workspace        run: rm -rf ./build": "actions/checkout@v4",
+            "Описание часто используемых команд и синтаксиса:on: — Определяет события, которые запускают workflow:push: Запускается при пуше в указанные ветки.pull_request: Запускается, когда создается или обновляется pull request.workflow_dispatch: Позволяет запускать workflow вручную через интерфейс GitHub Actions.jobs: — Определяет набор задач, которые должны быть выполнены.runs-on: — Указывает платформу, на которой будут выполняться задачи (например, ubuntu-latest, windows-latest).steps: — Каждый шаг в рамках работы (job):uses: — Позволяет использовать готовые экшены, созданные сообществом или GitHub (например, для проверки кода, установки среды и т.д.).run: — Запуск команды оболочки (например, npm install для установки зависимостей).": "Для чего: Клонирует репозиторий в рабочее пространство для дальнейших операций.",
+            "Unnamed: 3": "\"- name: Checkout code  uses: actions/checkout@v4\""
+        },
+        {
+            "code template": "",
+            "name: CI/CD Pipeline# Триггеры, на которые реагирует workflowon:  push:    branches:      - main      - dev  pull_request:    branches:      - main  workflow_dispatch: # Для ручного запуска workflow# Основная работа (job)jobs:  build:    runs-on: ubuntu-latest  # Операционная система для выполнения работы    steps:      # Проверить исходный код из репозитория      - name: Checkout code        uses: actions/checkout@v4      # Настроить Node.js среду (или Python, Ruby и т.д.)      - name: Set up Node.js        uses: actions/setup-node@v3        with:          node-version: '16'  # Можно указать любую версию      # Установить зависимости      - name: Install dependencies        run: npm install      # Выполнить тесты      - name: Run tests        run: npm test      # Сборка проекта (например, для фронтенд приложений)      - name: Build the project        run: npm run build      # Загрузить артефакты сборки      - name: Upload artifacts        uses: actions/upload-artifact@v3        with:          name: build          path: ./build      # Деплой на сервер через SSH (используя пароль из секретов)      - name: Deploy to server        run: |          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no user@server_ip \"          cd /path/to/project &&          git pull origin main &&          npm install &&          npm run start          \"      # Отправить уведомление в Slack после успешного деплоя (пример с webhook)      - name: Notify Slack        uses: slackapi/slack-github-action@v1.23.0        with:          payload: '{\"text\":\"Deployment to production was successful!\"}'        env:          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}      # Архивировать и удалить артефакты после завершения      - name: Clean up workspace        run: rm -rf ./build": "actions/setup-node@v3",
+            "Описание часто используемых команд и синтаксиса:on: — Определяет события, которые запускают workflow:push: Запускается при пуше в указанные ветки.pull_request: Запускается, когда создается или обновляется pull request.workflow_dispatch: Позволяет запускать workflow вручную через интерфейс GitHub Actions.jobs: — Определяет набор задач, которые должны быть выполнены.runs-on: — Указывает платформу, на которой будут выполняться задачи (например, ubuntu-latest, windows-latest).steps: — Каждый шаг в рамках работы (job):uses: — Позволяет использовать готовые экшены, созданные сообществом или GitHub (например, для проверки кода, установки среды и т.д.).run: — Запуск команды оболочки (например, npm install для установки зависимостей).": "Для чего: Настраивает среду для Node.js (можно использовать для Python, Java и других языков).",
+            "Unnamed: 3": "\"- name: Set up Node.js  uses: actions/setup-node@v3  with:    node-version: '16'\""
+        },
+        {
+            "code template": "",
+            "name: CI/CD Pipeline# Триггеры, на которые реагирует workflowon:  push:    branches:      - main      - dev  pull_request:    branches:      - main  workflow_dispatch: # Для ручного запуска workflow# Основная работа (job)jobs:  build:    runs-on: ubuntu-latest  # Операционная система для выполнения работы    steps:      # Проверить исходный код из репозитория      - name: Checkout code        uses: actions/checkout@v4      # Настроить Node.js среду (или Python, Ruby и т.д.)      - name: Set up Node.js        uses: actions/setup-node@v3        with:          node-version: '16'  # Можно указать любую версию      # Установить зависимости      - name: Install dependencies        run: npm install      # Выполнить тесты      - name: Run tests        run: npm test      # Сборка проекта (например, для фронтенд приложений)      - name: Build the project        run: npm run build      # Загрузить артефакты сборки      - name: Upload artifacts        uses: actions/upload-artifact@v3        with:          name: build          path: ./build      # Деплой на сервер через SSH (используя пароль из секретов)      - name: Deploy to server        run: |          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no user@server_ip \"          cd /path/to/project &&          git pull origin main &&          npm install &&          npm run start          \"      # Отправить уведомление в Slack после успешного деплоя (пример с webhook)      - name: Notify Slack        uses: slackapi/slack-github-action@v1.23.0        with:          payload: '{\"text\":\"Deployment to production was successful!\"}'        env:          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}      # Архивировать и удалить артефакты после завершения      - name: Clean up workspace        run: rm -rf ./build": "actions/upload-artifact@v3",
+            "Описание часто используемых команд и синтаксиса:on: — Определяет события, которые запускают workflow:push: Запускается при пуше в указанные ветки.pull_request: Запускается, когда создается или обновляется pull request.workflow_dispatch: Позволяет запускать workflow вручную через интерфейс GitHub Actions.jobs: — Определяет набор задач, которые должны быть выполнены.runs-on: — Указывает платформу, на которой будут выполняться задачи (например, ubuntu-latest, windows-latest).steps: — Каждый шаг в рамках работы (job):uses: — Позволяет использовать готовые экшены, созданные сообществом или GitHub (например, для проверки кода, установки среды и т.д.).run: — Запуск команды оболочки (например, npm install для установки зависимостей).": "Для чего: Загружает артефакты сборки, чтобы их можно было использовать позже (например, передать другим шагам или сохранить результат).",
+            "Unnamed: 3": "\"- name: Upload artifacts  uses: actions/upload-artifact@v3  with:    name: build    path: ./build\""
+        },
+        {
+            "code template": "",
+            "name: CI/CD Pipeline# Триггеры, на которые реагирует workflowon:  push:    branches:      - main      - dev  pull_request:    branches:      - main  workflow_dispatch: # Для ручного запуска workflow# Основная работа (job)jobs:  build:    runs-on: ubuntu-latest  # Операционная система для выполнения работы    steps:      # Проверить исходный код из репозитория      - name: Checkout code        uses: actions/checkout@v4      # Настроить Node.js среду (или Python, Ruby и т.д.)      - name: Set up Node.js        uses: actions/setup-node@v3        with:          node-version: '16'  # Можно указать любую версию      # Установить зависимости      - name: Install dependencies        run: npm install      # Выполнить тесты      - name: Run tests        run: npm test      # Сборка проекта (например, для фронтенд приложений)      - name: Build the project        run: npm run build      # Загрузить артефакты сборки      - name: Upload artifacts        uses: actions/upload-artifact@v3        with:          name: build          path: ./build      # Деплой на сервер через SSH (используя пароль из секретов)      - name: Deploy to server        run: |          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no user@server_ip \"          cd /path/to/project &&          git pull origin main &&          npm install &&          npm run start          \"      # Отправить уведомление в Slack после успешного деплоя (пример с webhook)      - name: Notify Slack        uses: slackapi/slack-github-action@v1.23.0        with:          payload: '{\"text\":\"Deployment to production was successful!\"}'        env:          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}      # Архивировать и удалить артефакты после завершения      - name: Clean up workspace        run: rm -rf ./build": "actions/download-artifact@v3",
+            "Описание часто используемых команд и синтаксиса:on: — Определяет события, которые запускают workflow:push: Запускается при пуше в указанные ветки.pull_request: Запускается, когда создается или обновляется pull request.workflow_dispatch: Позволяет запускать workflow вручную через интерфейс GitHub Actions.jobs: — Определяет набор задач, которые должны быть выполнены.runs-on: — Указывает платформу, на которой будут выполняться задачи (например, ubuntu-latest, windows-latest).steps: — Каждый шаг в рамках работы (job):uses: — Позволяет использовать готовые экшены, созданные сообществом или GitHub (например, для проверки кода, установки среды и т.д.).run: — Запуск команды оболочки (например, npm install для установки зависимостей).": "Для чего: Позволяет загрузить артефакты, сохранённые на предыдущем этапе.",
+            "Unnamed: 3": "\"- name: Download artifacts  uses: actions/download-artifact@v3  with:    name: build\""
+        },
+        {
+            "code template": "",
+            "name: CI/CD Pipeline# Триггеры, на которые реагирует workflowon:  push:    branches:      - main      - dev  pull_request:    branches:      - main  workflow_dispatch: # Для ручного запуска workflow# Основная работа (job)jobs:  build:    runs-on: ubuntu-latest  # Операционная система для выполнения работы    steps:      # Проверить исходный код из репозитория      - name: Checkout code        uses: actions/checkout@v4      # Настроить Node.js среду (или Python, Ruby и т.д.)      - name: Set up Node.js        uses: actions/setup-node@v3        with:          node-version: '16'  # Можно указать любую версию      # Установить зависимости      - name: Install dependencies        run: npm install      # Выполнить тесты      - name: Run tests        run: npm test      # Сборка проекта (например, для фронтенд приложений)      - name: Build the project        run: npm run build      # Загрузить артефакты сборки      - name: Upload artifacts        uses: actions/upload-artifact@v3        with:          name: build          path: ./build      # Деплой на сервер через SSH (используя пароль из секретов)      - name: Deploy to server        run: |          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no user@server_ip \"          cd /path/to/project &&          git pull origin main &&          npm install &&          npm run start          \"      # Отправить уведомление в Slack после успешного деплоя (пример с webhook)      - name: Notify Slack        uses: slackapi/slack-github-action@v1.23.0        with:          payload: '{\"text\":\"Deployment to production was successful!\"}'        env:          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}      # Архивировать и удалить артефакты после завершения      - name: Clean up workspace        run: rm -rf ./build": "actions/cache@v3",
+            "Описание часто используемых команд и синтаксиса:on: — Определяет события, которые запускают workflow:push: Запускается при пуше в указанные ветки.pull_request: Запускается, когда создается или обновляется pull request.workflow_dispatch: Позволяет запускать workflow вручную через интерфейс GitHub Actions.jobs: — Определяет набор задач, которые должны быть выполнены.runs-on: — Указывает платформу, на которой будут выполняться задачи (например, ubuntu-latest, windows-latest).steps: — Каждый шаг в рамках работы (job):uses: — Позволяет использовать готовые экшены, созданные сообществом или GitHub (например, для проверки кода, установки среды и т.д.).run: — Запуск команды оболочки (например, npm install для установки зависимостей).": "Для чего: Кэширует зависимости (например, node_modules), чтобы ускорить выполнение последующих сборок.",
+            "Unnamed: 3": "\"- name: Cache node modules  uses: actions/cache@v3  with:    path: node_modules    key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}    restore-keys: |      ${{ runner.os }}-node-\""
+        },
+        {
+            "code template": "",
+            "name: CI/CD Pipeline# Триггеры, на которые реагирует workflowon:  push:    branches:      - main      - dev  pull_request:    branches:      - main  workflow_dispatch: # Для ручного запуска workflow# Основная работа (job)jobs:  build:    runs-on: ubuntu-latest  # Операционная система для выполнения работы    steps:      # Проверить исходный код из репозитория      - name: Checkout code        uses: actions/checkout@v4      # Настроить Node.js среду (или Python, Ruby и т.д.)      - name: Set up Node.js        uses: actions/setup-node@v3        with:          node-version: '16'  # Можно указать любую версию      # Установить зависимости      - name: Install dependencies        run: npm install      # Выполнить тесты      - name: Run tests        run: npm test      # Сборка проекта (например, для фронтенд приложений)      - name: Build the project        run: npm run build      # Загрузить артефакты сборки      - name: Upload artifacts        uses: actions/upload-artifact@v3        with:          name: build          path: ./build      # Деплой на сервер через SSH (используя пароль из секретов)      - name: Deploy to server        run: |          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no user@server_ip \"          cd /path/to/project &&          git pull origin main &&          npm install &&          npm run start          \"      # Отправить уведомление в Slack после успешного деплоя (пример с webhook)      - name: Notify Slack        uses: slackapi/slack-github-action@v1.23.0        with:          payload: '{\"text\":\"Deployment to production was successful!\"}'        env:          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}      # Архивировать и удалить артефакты после завершения      - name: Clean up workspace        run: rm -rf ./build": "slackapi/slack-github-action@v1.23.0",
+            "Описание часто используемых команд и синтаксиса:on: — Определяет события, которые запускают workflow:push: Запускается при пуше в указанные ветки.pull_request: Запускается, когда создается или обновляется pull request.workflow_dispatch: Позволяет запускать workflow вручную через интерфейс GitHub Actions.jobs: — Определяет набор задач, которые должны быть выполнены.runs-on: — Указывает платформу, на которой будут выполняться задачи (например, ubuntu-latest, windows-latest).steps: — Каждый шаг в рамках работы (job):uses: — Позволяет использовать готовые экшены, созданные сообществом или GitHub (например, для проверки кода, установки среды и т.д.).run: — Запуск команды оболочки (например, npm install для установки зависимостей).": "Для чего: Отправляет уведомления в Slack через вебхуки.",
+            "Unnamed: 3": "\"- name: Notify Slack  uses: slackapi/slack-github-action@v1.23.0  with:    payload: '{\"text\":\"Deployment to production was successful!\"}'  env:    SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}\""
+        },
+        {
+            "code template": "",
+            "name: CI/CD Pipeline# Триггеры, на которые реагирует workflowon:  push:    branches:      - main      - dev  pull_request:    branches:      - main  workflow_dispatch: # Для ручного запуска workflow# Основная работа (job)jobs:  build:    runs-on: ubuntu-latest  # Операционная система для выполнения работы    steps:      # Проверить исходный код из репозитория      - name: Checkout code        uses: actions/checkout@v4      # Настроить Node.js среду (или Python, Ruby и т.д.)      - name: Set up Node.js        uses: actions/setup-node@v3        with:          node-version: '16'  # Можно указать любую версию      # Установить зависимости      - name: Install dependencies        run: npm install      # Выполнить тесты      - name: Run tests        run: npm test      # Сборка проекта (например, для фронтенд приложений)      - name: Build the project        run: npm run build      # Загрузить артефакты сборки      - name: Upload artifacts        uses: actions/upload-artifact@v3        with:          name: build          path: ./build      # Деплой на сервер через SSH (используя пароль из секретов)      - name: Deploy to server        run: |          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no user@server_ip \"          cd /path/to/project &&          git pull origin main &&          npm install &&          npm run start          \"      # Отправить уведомление в Slack после успешного деплоя (пример с webhook)      - name: Notify Slack        uses: slackapi/slack-github-action@v1.23.0        with:          payload: '{\"text\":\"Deployment to production was successful!\"}'        env:          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}      # Архивировать и удалить артефакты после завершения      - name: Clean up workspace        run: rm -rf ./build": "actions/setup-python@v4",
+            "Описание часто используемых команд и синтаксиса:on: — Определяет события, которые запускают workflow:push: Запускается при пуше в указанные ветки.pull_request: Запускается, когда создается или обновляется pull request.workflow_dispatch: Позволяет запускать workflow вручную через интерфейс GitHub Actions.jobs: — Определяет набор задач, которые должны быть выполнены.runs-on: — Указывает платформу, на которой будут выполняться задачи (например, ubuntu-latest, windows-latest).steps: — Каждый шаг в рамках работы (job):uses: — Позволяет использовать готовые экшены, созданные сообществом или GitHub (например, для проверки кода, установки среды и т.д.).run: — Запуск команды оболочки (например, npm install для установки зависимостей).": "Установка Python для выполнения скриптов или тестов.",
+            "Unnamed: 3": "\"- uses: actions/setup-python@v4  with:    python-version: '3.9'\""
+        },
+        {
+            "code template": "",
+            "name: CI/CD Pipeline# Триггеры, на которые реагирует workflowon:  push:    branches:      - main      - dev  pull_request:    branches:      - main  workflow_dispatch: # Для ручного запуска workflow# Основная работа (job)jobs:  build:    runs-on: ubuntu-latest  # Операционная система для выполнения работы    steps:      # Проверить исходный код из репозитория      - name: Checkout code        uses: actions/checkout@v4      # Настроить Node.js среду (или Python, Ruby и т.д.)      - name: Set up Node.js        uses: actions/setup-node@v3        with:          node-version: '16'  # Можно указать любую версию      # Установить зависимости      - name: Install dependencies        run: npm install      # Выполнить тесты      - name: Run tests        run: npm test      # Сборка проекта (например, для фронтенд приложений)      - name: Build the project        run: npm run build      # Загрузить артефакты сборки      - name: Upload artifacts        uses: actions/upload-artifact@v3        with:          name: build          path: ./build      # Деплой на сервер через SSH (используя пароль из секретов)      - name: Deploy to server        run: |          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no user@server_ip \"          cd /path/to/project &&          git pull origin main &&          npm install &&          npm run start          \"      # Отправить уведомление в Slack после успешного деплоя (пример с webhook)      - name: Notify Slack        uses: slackapi/slack-github-action@v1.23.0        with:          payload: '{\"text\":\"Deployment to production was successful!\"}'        env:          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}      # Архивировать и удалить артефакты после завершения      - name: Clean up workspace        run: rm -rf ./build": "actions/setup-java@v3",
+            "Описание часто используемых команд и синтаксиса:on: — Определяет события, которые запускают workflow:push: Запускается при пуше в указанные ветки.pull_request: Запускается, когда создается или обновляется pull request.workflow_dispatch: Позволяет запускать workflow вручную через интерфейс GitHub Actions.jobs: — Определяет набор задач, которые должны быть выполнены.runs-on: — Указывает платформу, на которой будут выполняться задачи (например, ubuntu-latest, windows-latest).steps: — Каждый шаг в рамках работы (job):uses: — Позволяет использовать готовые экшены, созданные сообществом или GitHub (например, для проверки кода, установки среды и т.д.).run: — Запуск команды оболочки (например, npm install для установки зависимостей).": "Установка Java для работы с проектами на базе Java.",
+            "Unnamed: 3": "\"- uses: actions/setup-java@v3  with:    java-version: '11'    distribution: 'adopt'\""
+        },
+        {
+            "code template": "",
+            "name: CI/CD Pipeline# Триггеры, на которые реагирует workflowon:  push:    branches:      - main      - dev  pull_request:    branches:      - main  workflow_dispatch: # Для ручного запуска workflow# Основная работа (job)jobs:  build:    runs-on: ubuntu-latest  # Операционная система для выполнения работы    steps:      # Проверить исходный код из репозитория      - name: Checkout code        uses: actions/checkout@v4      # Настроить Node.js среду (или Python, Ruby и т.д.)      - name: Set up Node.js        uses: actions/setup-node@v3        with:          node-version: '16'  # Можно указать любую версию      # Установить зависимости      - name: Install dependencies        run: npm install      # Выполнить тесты      - name: Run tests        run: npm test      # Сборка проекта (например, для фронтенд приложений)      - name: Build the project        run: npm run build      # Загрузить артефакты сборки      - name: Upload artifacts        uses: actions/upload-artifact@v3        with:          name: build          path: ./build      # Деплой на сервер через SSH (используя пароль из секретов)      - name: Deploy to server        run: |          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no user@server_ip \"          cd /path/to/project &&          git pull origin main &&          npm install &&          npm run start          \"      # Отправить уведомление в Slack после успешного деплоя (пример с webhook)      - name: Notify Slack        uses: slackapi/slack-github-action@v1.23.0        with:          payload: '{\"text\":\"Deployment to production was successful!\"}'        env:          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}      # Архивировать и удалить артефакты после завершения      - name: Clean up workspace        run: rm -rf ./build": "flyio/action-deploy@v1",
+            "Описание часто используемых команд и синтаксиса:on: — Определяет события, которые запускают workflow:push: Запускается при пуше в указанные ветки.pull_request: Запускается, когда создается или обновляется pull request.workflow_dispatch: Позволяет запускать workflow вручную через интерфейс GitHub Actions.jobs: — Определяет набор задач, которые должны быть выполнены.runs-on: — Указывает платформу, на которой будут выполняться задачи (например, ubuntu-latest, windows-latest).steps: — Каждый шаг в рамках работы (job):uses: — Позволяет использовать готовые экшены, созданные сообществом или GitHub (например, для проверки кода, установки среды и т.д.).run: — Запуск команды оболочки (например, npm install для установки зависимостей).": "Деплой приложения на платформу Fly.io.",
+            "Unnamed: 3": "\"- uses: superfly/flyctl-actions@v1  with:    app: my-app  # Имя приложения на Fly.io    args: \"deploy\"  # Аргументы для деплоя\""
+        },
+        {
+            "code template": "github variables",
+            "name: CI/CD Pipeline# Триггеры, на которые реагирует workflowon:  push:    branches:      - main      - dev  pull_request:    branches:      - main  workflow_dispatch: # Для ручного запуска workflow# Основная работа (job)jobs:  build:    runs-on: ubuntu-latest  # Операционная система для выполнения работы    steps:      # Проверить исходный код из репозитория      - name: Checkout code        uses: actions/checkout@v4      # Настроить Node.js среду (или Python, Ruby и т.д.)      - name: Set up Node.js        uses: actions/setup-node@v3        with:          node-version: '16'  # Можно указать любую версию      # Установить зависимости      - name: Install dependencies        run: npm install      # Выполнить тесты      - name: Run tests        run: npm test      # Сборка проекта (например, для фронтенд приложений)      - name: Build the project        run: npm run build      # Загрузить артефакты сборки      - name: Upload artifacts        uses: actions/upload-artifact@v3        with:          name: build          path: ./build      # Деплой на сервер через SSH (используя пароль из секретов)      - name: Deploy to server        run: |          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no user@server_ip \"          cd /path/to/project &&          git pull origin main &&          npm install &&          npm run start          \"      # Отправить уведомление в Slack после успешного деплоя (пример с webhook)      - name: Notify Slack        uses: slackapi/slack-github-action@v1.23.0        with:          payload: '{\"text\":\"Deployment to production was successful!\"}'        env:          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}      # Архивировать и удалить артефакты после завершения      - name: Clean up workspace        run: rm -rf ./build": "${{ github.repository }}",
+            "Описание часто используемых команд и синтаксиса:on: — Определяет события, которые запускают workflow:push: Запускается при пуше в указанные ветки.pull_request: Запускается, когда создается или обновляется pull request.workflow_dispatch: Позволяет запускать workflow вручную через интерфейс GitHub Actions.jobs: — Определяет набор задач, которые должны быть выполнены.runs-on: — Указывает платформу, на которой будут выполняться задачи (например, ubuntu-latest, windows-latest).steps: — Каждый шаг в рамках работы (job):uses: — Позволяет использовать готовые экшены, созданные сообществом или GitHub (например, для проверки кода, установки среды и т.д.).run: — Запуск команды оболочки (например, npm install для установки зависимостей).": "Возвращает имя репозитория в формате owner/repo.",
+            "Unnamed: 3": "\"- run: echo \"Repository: ${{ github.repository }}\"\""
+        },
+        {
+            "code template": "",
+            "name: CI/CD Pipeline# Триггеры, на которые реагирует workflowon:  push:    branches:      - main      - dev  pull_request:    branches:      - main  workflow_dispatch: # Для ручного запуска workflow# Основная работа (job)jobs:  build:    runs-on: ubuntu-latest  # Операционная система для выполнения работы    steps:      # Проверить исходный код из репозитория      - name: Checkout code        uses: actions/checkout@v4      # Настроить Node.js среду (или Python, Ruby и т.д.)      - name: Set up Node.js        uses: actions/setup-node@v3        with:          node-version: '16'  # Можно указать любую версию      # Установить зависимости      - name: Install dependencies        run: npm install      # Выполнить тесты      - name: Run tests        run: npm test      # Сборка проекта (например, для фронтенд приложений)      - name: Build the project        run: npm run build      # Загрузить артефакты сборки      - name: Upload artifacts        uses: actions/upload-artifact@v3        with:          name: build          path: ./build      # Деплой на сервер через SSH (используя пароль из секретов)      - name: Deploy to server        run: |          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no user@server_ip \"          cd /path/to/project &&          git pull origin main &&          npm install &&          npm run start          \"      # Отправить уведомление в Slack после успешного деплоя (пример с webhook)      - name: Notify Slack        uses: slackapi/slack-github-action@v1.23.0        with:          payload: '{\"text\":\"Deployment to production was successful!\"}'        env:          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}      # Архивировать и удалить артефакты после завершения      - name: Clean up workspace        run: rm -rf ./build": "${{ github.ref }}",
+            "Описание часто используемых команд и синтаксиса:on: — Определяет события, которые запускают workflow:push: Запускается при пуше в указанные ветки.pull_request: Запускается, когда создается или обновляется pull request.workflow_dispatch: Позволяет запускать workflow вручную через интерфейс GitHub Actions.jobs: — Определяет набор задач, которые должны быть выполнены.runs-on: — Указывает платформу, на которой будут выполняться задачи (например, ubuntu-latest, windows-latest).steps: — Каждый шаг в рамках работы (job):uses: — Позволяет использовать готовые экшены, созданные сообществом или GitHub (например, для проверки кода, установки среды и т.д.).run: — Запуск команды оболочки (например, npm install для установки зависимостей).": "Возвращает ссылку на ветку или тег, с которым работает workflow.",
+            "Unnamed: 3": "\"- run: echo \"Ref: ${{ github.ref }}\"\""
+        },
+        {
+            "code template": "",
+            "name: CI/CD Pipeline# Триггеры, на которые реагирует workflowon:  push:    branches:      - main      - dev  pull_request:    branches:      - main  workflow_dispatch: # Для ручного запуска workflow# Основная работа (job)jobs:  build:    runs-on: ubuntu-latest  # Операционная система для выполнения работы    steps:      # Проверить исходный код из репозитория      - name: Checkout code        uses: actions/checkout@v4      # Настроить Node.js среду (или Python, Ruby и т.д.)      - name: Set up Node.js        uses: actions/setup-node@v3        with:          node-version: '16'  # Можно указать любую версию      # Установить зависимости      - name: Install dependencies        run: npm install      # Выполнить тесты      - name: Run tests        run: npm test      # Сборка проекта (например, для фронтенд приложений)      - name: Build the project        run: npm run build      # Загрузить артефакты сборки      - name: Upload artifacts        uses: actions/upload-artifact@v3        with:          name: build          path: ./build      # Деплой на сервер через SSH (используя пароль из секретов)      - name: Deploy to server        run: |          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no user@server_ip \"          cd /path/to/project &&          git pull origin main &&          npm install &&          npm run start          \"      # Отправить уведомление в Slack после успешного деплоя (пример с webhook)      - name: Notify Slack        uses: slackapi/slack-github-action@v1.23.0        with:          payload: '{\"text\":\"Deployment to production was successful!\"}'        env:          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}      # Архивировать и удалить артефакты после завершения      - name: Clean up workspace        run: rm -rf ./build": "${{ github.sha }}",
+            "Описание часто используемых команд и синтаксиса:on: — Определяет события, которые запускают workflow:push: Запускается при пуше в указанные ветки.pull_request: Запускается, когда создается или обновляется pull request.workflow_dispatch: Позволяет запускать workflow вручную через интерфейс GitHub Actions.jobs: — Определяет набор задач, которые должны быть выполнены.runs-on: — Указывает платформу, на которой будут выполняться задачи (например, ubuntu-latest, windows-latest).steps: — Каждый шаг в рамках работы (job):uses: — Позволяет использовать готовые экшены, созданные сообществом или GitHub (например, для проверки кода, установки среды и т.д.).run: — Запуск команды оболочки (например, npm install для установки зависимостей).": "Возвращает SHA коммита, с которым работает workflow.",
+            "Unnamed: 3": "\"- run: echo \"Commit SHA: ${{ github.sha }}\"\""
+        },
+        {
+            "code template": "",
+            "name: CI/CD Pipeline# Триггеры, на которые реагирует workflowon:  push:    branches:      - main      - dev  pull_request:    branches:      - main  workflow_dispatch: # Для ручного запуска workflow# Основная работа (job)jobs:  build:    runs-on: ubuntu-latest  # Операционная система для выполнения работы    steps:      # Проверить исходный код из репозитория      - name: Checkout code        uses: actions/checkout@v4      # Настроить Node.js среду (или Python, Ruby и т.д.)      - name: Set up Node.js        uses: actions/setup-node@v3        with:          node-version: '16'  # Можно указать любую версию      # Установить зависимости      - name: Install dependencies        run: npm install      # Выполнить тесты      - name: Run tests        run: npm test      # Сборка проекта (например, для фронтенд приложений)      - name: Build the project        run: npm run build      # Загрузить артефакты сборки      - name: Upload artifacts        uses: actions/upload-artifact@v3        with:          name: build          path: ./build      # Деплой на сервер через SSH (используя пароль из секретов)      - name: Deploy to server        run: |          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no user@server_ip \"          cd /path/to/project &&          git pull origin main &&          npm install &&          npm run start          \"      # Отправить уведомление в Slack после успешного деплоя (пример с webhook)      - name: Notify Slack        uses: slackapi/slack-github-action@v1.23.0        with:          payload: '{\"text\":\"Deployment to production was successful!\"}'        env:          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}      # Архивировать и удалить артефакты после завершения      - name: Clean up workspace        run: rm -rf ./build": "${{ github.actor }}",
+            "Описание часто используемых команд и синтаксиса:on: — Определяет события, которые запускают workflow:push: Запускается при пуше в указанные ветки.pull_request: Запускается, когда создается или обновляется pull request.workflow_dispatch: Позволяет запускать workflow вручную через интерфейс GitHub Actions.jobs: — Определяет набор задач, которые должны быть выполнены.runs-on: — Указывает платформу, на которой будут выполняться задачи (например, ubuntu-latest, windows-latest).steps: — Каждый шаг в рамках работы (job):uses: — Позволяет использовать готовые экшены, созданные сообществом или GitHub (например, для проверки кода, установки среды и т.д.).run: — Запуск команды оболочки (например, npm install для установки зависимостей).": "Возвращает имя пользователя, который инициировал запуск workflow.",
+            "Unnamed: 3": "\"- run: echo \"Actor: ${{ github.actor }}\"\""
+        },
+        {
+            "code template": "",
+            "name: CI/CD Pipeline# Триггеры, на которые реагирует workflowon:  push:    branches:      - main      - dev  pull_request:    branches:      - main  workflow_dispatch: # Для ручного запуска workflow# Основная работа (job)jobs:  build:    runs-on: ubuntu-latest  # Операционная система для выполнения работы    steps:      # Проверить исходный код из репозитория      - name: Checkout code        uses: actions/checkout@v4      # Настроить Node.js среду (или Python, Ruby и т.д.)      - name: Set up Node.js        uses: actions/setup-node@v3        with:          node-version: '16'  # Можно указать любую версию      # Установить зависимости      - name: Install dependencies        run: npm install      # Выполнить тесты      - name: Run tests        run: npm test      # Сборка проекта (например, для фронтенд приложений)      - name: Build the project        run: npm run build      # Загрузить артефакты сборки      - name: Upload artifacts        uses: actions/upload-artifact@v3        with:          name: build          path: ./build      # Деплой на сервер через SSH (используя пароль из секретов)      - name: Deploy to server        run: |          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no user@server_ip \"          cd /path/to/project &&          git pull origin main &&          npm install &&          npm run start          \"      # Отправить уведомление в Slack после успешного деплоя (пример с webhook)      - name: Notify Slack        uses: slackapi/slack-github-action@v1.23.0        with:          payload: '{\"text\":\"Deployment to production was successful!\"}'        env:          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}      # Архивировать и удалить артефакты после завершения      - name: Clean up workspace        run: rm -rf ./build": "${{ secrets.SOME_SECRET }}",
+            "Описание часто используемых команд и синтаксиса:on: — Определяет события, которые запускают workflow:push: Запускается при пуше в указанные ветки.pull_request: Запускается, когда создается или обновляется pull request.workflow_dispatch: Позволяет запускать workflow вручную через интерфейс GitHub Actions.jobs: — Определяет набор задач, которые должны быть выполнены.runs-on: — Указывает платформу, на которой будут выполняться задачи (например, ubuntu-latest, windows-latest).steps: — Каждый шаг в рамках работы (job):uses: — Позволяет использовать готовые экшены, созданные сообществом или GitHub (например, для проверки кода, установки среды и т.д.).run: — Запуск команды оболочки (например, npm install для установки зависимостей).": "Доступ к секретам, хранящимся в репозитории.",
+            "Unnamed: 3": "\"- run: echo \"Using secret ${{ secrets.SOME_SECRET }}\""
+        },
+        {
+            "code template": "",
+            "name: CI/CD Pipeline# Триггеры, на которые реагирует workflowon:  push:    branches:      - main      - dev  pull_request:    branches:      - main  workflow_dispatch: # Для ручного запуска workflow# Основная работа (job)jobs:  build:    runs-on: ubuntu-latest  # Операционная система для выполнения работы    steps:      # Проверить исходный код из репозитория      - name: Checkout code        uses: actions/checkout@v4      # Настроить Node.js среду (или Python, Ruby и т.д.)      - name: Set up Node.js        uses: actions/setup-node@v3        with:          node-version: '16'  # Можно указать любую версию      # Установить зависимости      - name: Install dependencies        run: npm install      # Выполнить тесты      - name: Run tests        run: npm test      # Сборка проекта (например, для фронтенд приложений)      - name: Build the project        run: npm run build      # Загрузить артефакты сборки      - name: Upload artifacts        uses: actions/upload-artifact@v3        with:          name: build          path: ./build      # Деплой на сервер через SSH (используя пароль из секретов)      - name: Deploy to server        run: |          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no user@server_ip \"          cd /path/to/project &&          git pull origin main &&          npm install &&          npm run start          \"      # Отправить уведомление в Slack после успешного деплоя (пример с webhook)      - name: Notify Slack        uses: slackapi/slack-github-action@v1.23.0        with:          payload: '{\"text\":\"Deployment to production was successful!\"}'        env:          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}      # Архивировать и удалить артефакты после завершения      - name: Clean up workspace        run: rm -rf ./build": "${{ runner.os }}",
+            "Описание часто используемых команд и синтаксиса:on: — Определяет события, которые запускают workflow:push: Запускается при пуше в указанные ветки.pull_request: Запускается, когда создается или обновляется pull request.workflow_dispatch: Позволяет запускать workflow вручную через интерфейс GitHub Actions.jobs: — Определяет набор задач, которые должны быть выполнены.runs-on: — Указывает платформу, на которой будут выполняться задачи (например, ubuntu-latest, windows-latest).steps: — Каждый шаг в рамках работы (job):uses: — Позволяет использовать готовые экшены, созданные сообществом или GitHub (например, для проверки кода, установки среды и т.д.).run: — Запуск команды оболочки (например, npm install для установки зависимостей).": "Возвращает операционную систему, на которой выполняется runner.",
+            "Unnamed: 3": "\"- run: echo \"Runner OS: ${{ runner.os }}\""
+        },
+        {
+            "code template": "",
+            "name: CI/CD Pipeline# Триггеры, на которые реагирует workflowon:  push:    branches:      - main      - dev  pull_request:    branches:      - main  workflow_dispatch: # Для ручного запуска workflow# Основная работа (job)jobs:  build:    runs-on: ubuntu-latest  # Операционная система для выполнения работы    steps:      # Проверить исходный код из репозитория      - name: Checkout code        uses: actions/checkout@v4      # Настроить Node.js среду (или Python, Ruby и т.д.)      - name: Set up Node.js        uses: actions/setup-node@v3        with:          node-version: '16'  # Можно указать любую версию      # Установить зависимости      - name: Install dependencies        run: npm install      # Выполнить тесты      - name: Run tests        run: npm test      # Сборка проекта (например, для фронтенд приложений)      - name: Build the project        run: npm run build      # Загрузить артефакты сборки      - name: Upload artifacts        uses: actions/upload-artifact@v3        with:          name: build          path: ./build      # Деплой на сервер через SSH (используя пароль из секретов)      - name: Deploy to server        run: |          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no user@server_ip \"          cd /path/to/project &&          git pull origin main &&          npm install &&          npm run start          \"      # Отправить уведомление в Slack после успешного деплоя (пример с webhook)      - name: Notify Slack        uses: slackapi/slack-github-action@v1.23.0        with:          payload: '{\"text\":\"Deployment to production was successful!\"}'        env:          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}      # Архивировать и удалить артефакты после завершения      - name: Clean up workspace        run: rm -rf ./build": "${{ env.VARIABLE_NAME }}",
+            "Описание часто используемых команд и синтаксиса:on: — Определяет события, которые запускают workflow:push: Запускается при пуше в указанные ветки.pull_request: Запускается, когда создается или обновляется pull request.workflow_dispatch: Позволяет запускать workflow вручную через интерфейс GitHub Actions.jobs: — Определяет набор задач, которые должны быть выполнены.runs-on: — Указывает платформу, на которой будут выполняться задачи (например, ubuntu-latest, windows-latest).steps: — Каждый шаг в рамках работы (job):uses: — Позволяет использовать готовые экшены, созданные сообществом или GitHub (например, для проверки кода, установки среды и т.д.).run: — Запуск команды оболочки (например, npm install для установки зависимостей).": "Доступ к переменным окружения, которые ты можешь задать в workflow.",
+            "Unnamed: 3": "env:  MY_VARIABLE: 'some_value'steps:  - run: echo \"Value of MY_VARIABLE: ${{ env.MY_VARIABLE }}\""
+        }
+    ],
+    "Vagrant": [],
+    "DOCKER": [
+        {
+            "purpose": "Install docker ubuntu",
+            "command": "sudo apt updatesudo apt install apt-transport-httpscurl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -sudo add-apt-repository \"deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable\"sudo apt updatesudo apt install docker-cesudo systemctl status dockersudo usermod -aG docker $USER"
+        }
+    ],
+    "Ansible": [
+        {
+            "purpose": "config file name",
+            "command": "ansible.cfg",
+            "comments": "",
+            "example": ""
+        },
+        {
+            "purpose": "ping servers",
+            "command": "ansible all -m ping",
+            "comments": "this will work if you have setup config to know what is the inventory fileif it’s not setup use: ansible -I ./hosts.txt all -m ping",
+            "example": ""
+        },
+        {
+            "purpose": "check servers setup ",
+            "command": "ansible all -m setup",
+            "comments": "",
+            "example": ""
+        },
+        {
+            "purpose": "run shell command on slave",
+            "command": "ansible all -m shell -a \"uptime\"",
+            "comments": "-a' is required for shell module",
+            "example": ""
+        },
+        {
+            "purpose": "run shell command as sudo",
+            "command": "-b'",
+            "comments": "add it after command in quotes",
+            "example": "ansible all -m shell -a \"ufw allow 22/tcp\" -b"
+        },
+        {
+            "purpose": "copy file from master",
+            "command": "ansible all -m copy -a \"src=path dest=path mode=755\" -b",
+            "comments": "-a' argument is also required here",
+            "example": ""
+        },
+        {
+            "purpose": "delete file",
+            "command": "ansible all -m file -a \"path=/path/to/file state=absent\"",
+            "comments": "",
+            "example": ""
+        },
+        {
+            "purpose": "download file by url",
+            "command": "module \"get_url\"",
+            "comments": "ansible all -m get_url -a \"url=http://path dest=path\" -b",
+            "example": "-a' argument is required"
+        },
+        {
+            "purpose": "install/remove plugins using system package manager",
+            "command": "ansible all -m apt -a \"name=stress state=latest\" -b",
+            "comments": "\"yum\" for CentOS, \"apt\" for Ubuntustate latest/presentto installabsent to delete",
+            "example": ""
+        },
+        {
+            "purpose": "connect to web url like curl",
+            "command": "uri",
+            "comments": "-a' argument is requiredto return content add \"return_content=true\"",
+            "example": "no content: ansible all -m uri -a \"url=https://adv-it.net/\"with content: ansible all -m uri -a \"url=https://adv-it.net/ return_content=true\""
+        },
+        {
+            "purpose": "manage service",
+            "command": "service",
+            "comments": "-a' argument is requiredcan take several argumentsstate=restarted to restartstate=stopped to stop",
+            "example": "ansible all -m service -a \"name=apache2 state=started enabled=yes\" -b"
+        },
+        {
+            "purpose": "debug arg",
+            "command": "-v'",
+            "comments": "up to 5 v to provide more info",
+            "example": ""
+        }
+    ],
+    "Jmeter": [],
+    "heroku": [
+        {
+            "purpose": "login heroku from cli",
+            "command": "heroku login",
+            "comments": "",
+            "example": ""
+        },
+        {
+            "purpose": "Просмотр логов приложения в реальном времени",
+            "command": "heroku logs --tail",
+            "comments": "Удобно для отладки во время разработки или после деплоя.",
+            "example": ""
+        },
+        {
+            "purpose": "Просмотр статуса процессов Dyno",
+            "command": "heroku ps",
+            "comments": "Показывает, какие процессы работают в приложении.",
+            "example": ""
+        },
+        {
+            "purpose": "Масштабирование Dyno (например, до 2 процессов)",
+            "command": "heroku ps:scale web=2",
+            "comments": "Не доступно на бесплатном плане. Для Production.",
+            "example": ""
+        },
+        {
+            "purpose": "Просмотр текущих переменных окружения",
+            "command": "heroku config",
+            "comments": "Полезно для проверки, загружен ли ключ NEW_RELIC_LICENSE_KEY или другие конфиги.",
+            "example": ""
+        },
+        {
+            "purpose": "Установка переменной окружения",
+            "command": "heroku config:set VAR_NAME=value",
+            "comments": "Используется для добавления или изменения переменных, например, ключей или настроек базы данных.",
+            "example": ""
+        },
+        {
+            "purpose": "Перезапуск всех процессов Dyno",
+            "command": "heroku restart",
+            "comments": "Необходимо после внесения изменений в код или переменные окружения, чтобы обновления вступили в силу.",
+            "example": ""
+        },
+        {
+            "purpose": "Откат приложения до указанной версии",
+            "command": "heroku releases:rollback v123",
+            "comments": "Удобно при ошибках в новом деплое.",
+            "example": ""
+        },
+        {
+            "purpose": "Включение логирования метрик памяти и CPU",
+            "command": "heroku labs:enable log-runtime-metrics",
+            "comments": "Метрики помогут выявить узкие места, связанные с производительностью.",
+            "example": ""
+        }
+    ],
+    "NewRelic_queries": [
+        {
+            "purpose": "Показать все события MemoryUsage за последние 30 минут",
+            "command": "SELECT * FROM MemoryUsage SINCE 30 minutes ago",
+            "comments": "Полезно для проверки отправленных данных.",
+            "example": ""
+        },
+        {
+            "purpose": "Среднее использование памяти (Heap и RSS) за последние 30 минут",
+            "command": "SELECT average(heapUsed), average(rss) FROM MemoryUsage SINCE 30 minutes ago",
+            "comments": "Используйте для анализа средней загрузки памяти.",
+            "example": ""
+        },
+        {
+            "purpose": "SELECT max(heapUsed), max(rss) FROM MemoryUsage SINCE 30 minutes ago",
+            "command": "Максимальное использование памяти (Heap и RSS) за 30 минут",
+            "comments": "Для анализа пиковых значений.",
+            "example": ""
+        },
+        {
+            "purpose": "SELECT count(*) FROM MemoryUsage FACET route SINCE 1 hour ago",
+            "command": "Подсчет запросов по маршрутам за последний час",
+            "comments": "Помогает выявить наиболее нагруженные маршруты.",
+            "example": ""
+        },
+        {
+            "purpose": "SELECT average(duration) FROM Transaction FACET route SINCE 30 minutes ago",
+            "command": "Среднее время выполнения запросов по маршрутам",
+            "comments": "Используется для анализа производительности.",
+            "example": ""
+        },
+        {
+            "purpose": "SELECT sum(duration) FROM Transaction SINCE 1 day ago TIMESERIES 1 hour",
+            "command": "Суммарное время выполнения запросов по часам за сутки",
+            "comments": "Показывает нагрузку на приложение в динамике.",
+            "example": ""
+        },
+        {
+            "purpose": "SELECT average(heapUsed) FROM MemoryUsage WHERE heapUsed > 100 FACET route SINCE 30 minutes ago",
+            "command": "Среднее использование памяти только для загруженных маршрутов",
+            "comments": "Позволяет сосредоточиться на маршрутах с высоким использованием памяти.",
+            "example": ""
+        },
+        {
+            "purpose": "SELECT percentile(heapUsed, 90), percentile(rss, 90) FROM MemoryUsage SINCE 1 hour ago",
+            "command": "90-й перцентиль памяти (Heap и RSS)",
+            "comments": "Выявляет аномальные нагрузки (редкие высокие значения).",
+            "example": ""
+        },
+        {
+            "purpose": "SELECT * FROM GarbageCollection SINCE 30 minutes ago",
+            "command": "Просмотр событий сборки мусора",
+            "comments": "Используется для анализа продолжительности GC и его влияния на приложение.",
+            "example": ""
+        },
+        {
+            "purpose": "SELECT average(duration) FROM GarbageCollection SINCE 30 minutes ago",
+            "command": "Среднее время выполнения сборки мусора",
+            "comments": "Помогает понять, насколько часто и долго происходит сборка мусора.",
+            "example": ""
+        },
+        {
+            "purpose": "SELECT uniqueCount(route) FROM HighMemoryUsage SINCE 1 hour ago",
+            "command": "Количество маршрутов с высоким использованием памяти",
+            "comments": "Позволяет сосредоточиться на узких местах.",
+            "example": ""
+        }
+    ]
+}

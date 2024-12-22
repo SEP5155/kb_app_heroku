@@ -14,6 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Submenu item clicked:', item.dataset.id);
         });
     });
+    subMenuItem.forEach(item => {
+        item.addEventListener('click', (event) => {
+            event.stopPropagation(); // Остановить всплытие события
+            console.log('Submenu item clicked:', item.dataset.id);
+        });
+    });
 
     nestedMenuItem.forEach(item => {
         item.addEventListener('click', () => {
@@ -24,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (item.parentElement.parentElement.parentElement.parentElement.id === 'guides') {
             selectedData = guidesData.find(guide => guide._id === id);
             topic = 'guides'
-        } else if (item.parentElement.parentElement.id === 'responses') {
+        } else if (item.parentElement.parentElement.parentElement.parentElement.id === 'responses') {
             selectedData = responsesData.find(response => response._id === id); 
             topic = 'responses'
         }
@@ -35,10 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <span class="breadcrumps__title"><h2>${selectedData.technology}</h2></span>
                 <hr>
             </div>
-            <div class="article_part purpose">${selectedData.purpose}</div>
-            <div class="article_part command">${selectedData.command}</div>
-            <div class="article_part example">${selectedData.example}</div>
-            <div class="article_part comments">${selectedData.comments}</div>
+            <div class="article_part purpose"><span>Purpose:</span><br><span>${selectedData.purpose}</span></div>
+            <div class="article_part command"><span>Command:</span><br><span>${selectedData.command}</span></div>
+            <div class="article_part example"><span>Example:</span><br><span>${selectedData.example}</span></div>
+            <div class="article_part comments"><span>Comments:</span><br><span>${selectedData.comments}</span></div>
             `
         } else if (selectedData && topic === 'responses') {
             articleBody.innerHTML = `
