@@ -86,3 +86,13 @@ footer {
 .subtopic {
     padding-top: 5px;
 }
+
+/* Admin panel */
+
+.create_form {
+    display: none;
+}
+
+.create_form.active {
+    display: block;
+}

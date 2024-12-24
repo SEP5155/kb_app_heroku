@@ -17,3 +17,6 @@ exports.getHomePage = async (req, res) => {
     console.log(responses);
     res.render('layout', { topicNames, guides, responses, filteredGuides, filteredResponses });
 }
+exports.getAdminPanel = (req, res) => {
+    res.render('admin_panel');
+}

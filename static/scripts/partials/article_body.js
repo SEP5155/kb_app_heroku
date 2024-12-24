@@ -43,6 +43,11 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="article_part purpose"><span>Purpose:</span><br><span>${selectedData.purpose}</span></div>
             <div class="article_part command"><span>Command:</span><br><span>${selectedData.command}</span></div>
+            <div class="copy-container">
+                <button class="copy-btn" data-target="textToCopy">
+                    <img src="../pictures/copy_icon.png" alt="Copy" />
+                </button>
+            </div>
             <div class="article_part example"><span>Example:</span><br><span>${selectedData.example}</span></div>
             <div class="article_part comments"><span>Comments:</span><br><span>${selectedData.comments}</span></div>
             `

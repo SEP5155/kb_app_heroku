@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Base</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/article.css">
+</head>
+<body>
+
+    <%- include('partials/header') %>
+    <main>
+        <aside>
+            <ul id="admin_menu">
+                <li class="admin_action">
+                    <span>Add article</span>
+                    <ul>
+                        <span>Which type</span>
+                        <li id="action_add_guide" class="admin_action type-add">Guide</li>
+                        <li id="action_add_response" class="admin_action type-add">Response</li>
+                    </ul>
+                </li>
+                <li class="admin_action">Delete article</li>
+                <li class="admin_action">Update article</li>
+            </ul>
+        </aside>
+        <div id="create_guide" class="create_form">
+            <h2>Create Guide</h2>
+            <form method="post">
+                <label for="purpose"></label>
+                <input id="purpose" name="purpose" placeholder="purpose">
+                <label for="command"></label>
+                <input id="command" name="command" placeholder="command">
+                <label for="example"></label>
+                <input id="example" name="example" placeholder="example">
+                <label for="purpose"></label>
+                <input id="comments" name="comments" placeholder="comments">
+                <button id="creare_article" type="submit" data-route="">Submit</button>
+            </form>
+        </div>
+        <div id="create_response" class="create_form">
+            <h2>Create response</h2>
+            <form method="post">
+                <label for="purpose"></label>
+                <input id="purpose" name="purpose" placeholder="purpose">
+                <label for="command"></label>
+                <input id="command" name="command" placeholder="command">
+                <label for="example"></label>
+                <input id="example" name="example" placeholder="example">
+                <label for="purpose"></label>
+                <input id="comments" name="comments" placeholder="comments">
+                <button id="creare_article" type="submit" data-route="">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    
+    <script src="../scripts/partials/admin_panel.js"></script>
+</body>
+<%- include('partials/footer') %>
+</html>

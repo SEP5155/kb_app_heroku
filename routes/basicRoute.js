@@ -7,5 +7,8 @@ const router = express.Router();
 router
     .route('/')
     .get(basicController.getHomePage);
+router
+    .route('/admin_panel')
+    .get(basicController.getAdminPanel);
 
 module.exports = router;
