@@ -21,38 +21,43 @@
                         <li id="action_add_response" class="admin_action type-add">Response</li>
                     </ul>
                 </li>
-                <li class="admin_action">Delete article</li>
-                <li class="admin_action">Update article</li>
+                <li class="admin_action">
+                    <span>Edit/Delete article</span>
+                    <ul>
+                        <span>Which type</span>
+                        <li id="action_edit_guide" class="admin_action type-edit">Guide</li>
+                        <li id="action_edit_response" class="admin_action type-edit">Response</li>
+                    </ul>
+                </li>
             </ul>
         </aside>
         <div id="create_guide" class="create_form">
             <h2>Create Guide</h2>
             <form method="post">
+                <label for="technology"></label>
+                <input id="technology" name="technology" placeholder="technology">
                 <label for="purpose"></label>
                 <input id="purpose" name="purpose" placeholder="purpose">
                 <label for="command"></label>
                 <input id="command" name="command" placeholder="command">
                 <label for="example"></label>
                 <input id="example" name="example" placeholder="example">
-                <label for="purpose"></label>
-                <input id="comments" name="comments" placeholder="comments">
                 <button id="creare_article" type="submit" data-route="">Submit</button>
             </form>
         </div>
         <div id="create_response" class="create_form">
             <h2>Create response</h2>
             <form method="post">
-                <label for="purpose"></label>
-                <input id="purpose" name="purpose" placeholder="purpose">
-                <label for="command"></label>
-                <input id="command" name="command" placeholder="command">
-                <label for="example"></label>
-                <input id="example" name="example" placeholder="example">
-                <label for="purpose"></label>
-                <input id="comments" name="comments" placeholder="comments">
+                <label for="subCategory"></label>
+                <input id="subCategory" name="subCategory" placeholder="subCategory">
+                <label for="topic"></label>
+                <input id="topic" name="topic" placeholder="topic">
+                <label for="text"></label>
+                <input id="text" name="text" placeholder="text">
                 <button id="creare_article" type="submit" data-route="">Submit</button>
             </form>
         </div>
+        <div class="articles_list"></div>
     </main>
 
     
