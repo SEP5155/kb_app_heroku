@@ -64,6 +64,12 @@ footer {
     text-align: center;
     width: 100%;
 }
+.articles_list {
+    display: none;
+}
+.articles_list.active {
+    display: block;
+}
 .subtopic {
     display: none;
 }

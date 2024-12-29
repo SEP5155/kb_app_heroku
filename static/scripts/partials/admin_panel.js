@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const guideForm = document.getElementById('create_guide');
             const responseForm = document.getElementById('create_response');
-
+            articlesContainer.classList.remove('active');
             articlesContainer.innerHTML = '';
 
             if (action.id === 'action_add_guide') {
@@ -57,19 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     .map(item => `<li>${item.topic}</li>`)
                     : [];
             articlesContainer.innerHTML = dataToRender.join('');
-
-
-            // if (route === '/api/v1/guide/') {
-            //     articlesContainer.innerHTML = '';
-            //     articlesContainer.innerHTML = result.guides
-            //     .map(item => `<li>${item.technology } - ${item.command}</li>`)
-            //     .join('');
-            // } else if (route === '/api/v1/responses/') {
-            //     articlesContainer.innerHTML = '';
-            //     articlesContainer.innerHTML = result.data
-            //     .map(item => `<li>${item.topic}</li>`)
-            //     .join('');
-            // }
+            articlesContainer.classList.add('active');
             
 
         })
