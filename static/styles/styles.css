@@ -58,7 +58,9 @@ footer {
     padding: 10px;
     text-align: center;
 }
-.preview_section {
+.preview_section,
+.articles_list,
+.create_form {
     text-align: center;
     width: 100%;
 }

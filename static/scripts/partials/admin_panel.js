@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const action_type_add = document.querySelectorAll('.admin_action.type-add');
     const action_type_edit = document.querySelectorAll('.admin_action.type-edit');
+    const articlesContainer = document.querySelector('.articles_list');
+    
 
     const routes = {
         action_edit_guide: '/api/v1/guide/',
@@ -14,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const guideForm = document.getElementById('create_guide');
             const responseForm = document.getElementById('create_response');
+
+            articlesContainer.innerHTML = '';
 
             if (action.id === 'action_add_guide') {
                 responseForm.classList.remove('active');
@@ -29,12 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
         action.addEventListener('click', async function (event) {
             event.stopPropagation();
 
-            const articlesContainer = document.querySelector('.articles_list');
-
-            const route = routes[action.id]
+            const route = routes[action.id];
 
             const response = await fetch(route, {
-                method: 'GET', // Или 'PATCH' для обновления
+                method: 'GET',
                 headers: { 'Content-Type': 'application/json' },
             });
             if (!response.ok) throw new Error('Failed to get data');
@@ -42,6 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
             result = await response.json();
             console.log(result);
 
+            const form = document.querySelector('.create_form.active');
+            if(form) {
+                form.classList.remove('active');
+            }
             articlesContainer.innerHTML = '';
 
             const dataToRender = route === '/api/v1/guide/'
