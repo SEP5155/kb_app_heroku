@@ -62,4 +62,59 @@ document.addEventListener('DOMContentLoaded', () => {
 
         })
     })
+
+    document.getElementById('create_guide_form').addEventListener('submit', async(event) => {
+        event.preventDefault();
+
+        const formData = {
+            technology: document.querySelector('#guide_technology').value,
+            purpose: document.querySelector('#guide_purpose').value,
+            command: document.querySelector('#guide_command').value,
+            example: document.querySelector('#guide_example').value,
+            comment: document.querySelector('#guide_comment').value
+        }
+
+        try {
+            const response = await fetch('/api/v1/guide/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (!response.ok) throw new Error('Request failed');
+            alert('New guide was created');
+        } catch (err) {
+            alert('Validation failed. Reuired fields probaly missing');
+            console.error(err);
+        }
+    })
+
+    document.getElementById('create_response_form').addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        
+        const formData = {
+            subCategory: document.getElementById('response_subCategory').value,
+            topic: document.getElementById('response_topic').value,
+            text: document.getElementById('response_text').value,
+            additinalComments: document.getElementById('response_additinalComments').value
+        }
+        try {
+            const response = await fetch('/api/v1/responses', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            });
+            if (!response.ok) throw new Error('Request failed');
+            alert('New response was created');
+        } catch (err) {
+            alert('Validation failed. Reuired fields probaly missing');
+            console.error(err);
+        }
+        
+    })
 })
