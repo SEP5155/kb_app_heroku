@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('create_guide_form').addEventListener('submit', async(event) => {
         event.preventDefault();
-
+        
         const formData = {
             technology: document.querySelector('#guide_technology').value,
             purpose: document.querySelector('#guide_purpose').value,
