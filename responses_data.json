@@ -1,104 +1,68 @@
 [
     {
         "subCategory": "chat_scripts",
-        "topic": "",
-        "text": "",
+        "topic": "Greeting",
+        "text": "Hello There, thank you for reaching out to us!",
         "additinalComments": ""
     },
     {
         "subCategory": "chat_scripts",
-        "topic": "",
-        "text": "",
+        "topic": "Escalate",
+        "text": "Unfortunately I cannot figure this out at this moment, so I have to escalate it to our expert and you will get an update on this during few hours (3-6 hours). Expert will start shift at 10AM EST.",
         "additinalComments": ""
     },
     {
         "subCategory": "chat_scripts",
-        "topic": "",
-        "text": "",
+        "topic": "Get store URL",
+        "text": "Before we start can you share your store URL please",
         "additinalComments": ""
     },
     {
         "subCategory": "chat_scripts",
-        "topic": "",
-        "text": "",
+        "topic": "Ask for access",
+        "text": "We may need an access to your store admin panel to be able to troubleshoot, I'm sending you the request so please approve it if you don't mind.",
         "additinalComments": ""
     },
     {
         "subCategory": "chat_scripts",
-        "topic": "",
-        "text": "",
+        "topic": "Need more help?",
+        "text": "Please tell if there is anything else I can help you with?",
         "additinalComments": ""
     },
     {
         "subCategory": "chat_scripts",
-        "topic": "",
-        "text": "",
+        "topic": "Wish a good day",
+        "text": "You are welcome, was glad to assist you today!",
         "additinalComments": ""
     },
     {
         "subCategory": "chat_scripts",
-        "topic": "",
-        "text": "",
-        "additinalComments": ""
-    },
-    {
-        "subCategory": "chat_scripts",
-        "topic": "",
-        "text": "",
+        "topic": "Prices did not change response",
+        "text": "Hello There, thank you for reaching out to us!We have completed your update several hours ago and now your store should be good to go. Please let us know if there is anything else we may help you with. Thank you, Serhii",
         "additinalComments": ""
     },
     {
         "subCategory": "installer_macroses",
-        "topic": "",
-        "text": "",
+        "topic": "HIDE QUICK",
+        "text": "Just one note about your store. Based on how your theme handles variant selection we have to hide the Quick View button from wholesale customers on collection pages. Retail customers will not be affected, but let us know if you have any questions about this.<br><br>",
         "additinalComments": ""
     },
     {
         "subCategory": "installer_macroses",
-        "topic": "",
-        "text": "",
+        "topic": "ACCESS REQ CONFLICTS",
+        "text": "Hello! It looks like you asked for some help with the install process. Once you approve this request we'll check things out for you and let you know if we find any issues. Let us know if you have any questions. Thanks!",
         "additinalComments": ""
     },
     {
         "subCategory": "installer_macroses",
-        "topic": "",
-        "text": "",
+        "topic": "HIDE FEATURED PRODUCT",
+        "text": "Just one note about your theme. Based on how your theme builds the featured product on the homepage we can't change this price to wholesale. We went ahead and hid the featured product from wholesale customers. Retail will not be affected, but let us know if you have any questions about this. <br><br>",
         "additinalComments": ""
     },
     {
         "subCategory": "installer_macroses",
-        "topic": "",
-        "text": "",
-        "additinalComments": ""
-    },
-    {
-        "subCategory": "installer_macroses",
-        "topic": "",
-        "text": "",
-        "additinalComments": ""
-    },
-    {
-        "subCategory": "installer_macroses",
-        "topic": "",
-        "text": "",
-        "additinalComments": ""
-    },
-    {
-        "subCategory": "installer_macroses",
-        "topic": "",
-        "text": "",
-        "additinalComments": ""
-    },
-    {
-        "subCategory": "installer_macroses",
-        "topic": "",
-        "text": "",
-        "additinalComments": ""
-    },
-    {
-        "subCategory": "installer_macroses",
-        "topic": "",
-        "text": "",
+        "topic": "REQ COLLAB CODE",
+        "text": "Hello,My name is Serhii and I'm writing you on behalf of Wholesale Gorilla Team.I was trying to request access to your store but unfortunately I am in need of a, 'Collaborator request code.' If you could send that over I would greatly appreciate it. Store URL: Thank you, Serhii",
         "additinalComments": ""
     }
 ]
