@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Base</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/article.css">
+</head>
+<body>
+
+    <%- include('partials/header') %>
+    <main>
+        <aside class="admin_action_aside">
+            <ul id="admin_menu">
+                <li class="admin_action">
+                    <span>Add article</span>
+                    <ul>
+                        <span>Which type</span>
+                        <li id="action_add_guide" class="admin_action type-add">Guide</li>
+                        <li id="action_add_response" class="admin_action type-add">Response</li>
+                    </ul>
+                </li>
+                <li class="admin_action">
+                    <span>Edit/Delete article</span>
+                    <ul>
+                        <span>Which type</span>
+                        <li id="action_edit_guide" class="admin_action type-edit">Guide</li>
+                        <li id="action_edit_response" class="admin_action type-edit">Response</li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        <div id="create_guide" class="create_form">
+            <h2>Create Guide</h2>
+            <form method="POST" action="/api/v1/guide" id="create_guide_form">
+                <label for="guide_technology"></label>
+                <input id="guide_technology" type="text" name="guide_technology" placeholder="technology">
+                <label for="guide_purpose"></label>
+                <input id="guide_purpose" type="text" name="guide_purpose" placeholder="purpose">
+                <label for="guide_command"></label>
+                <input id="guide_command" type="text" name="guide_command" placeholder="command">
+                <label for="guide_example"></label>
+                <input id="guide_example" type="text" name="guide_example" placeholder="example">
+                <label for="guide_comment"></label>
+                <input id="guide_comment" type="text" name="guide_comment" placeholder="comment">
+                <button id="creare_article" type="submit" data-route="">Submit</button>
+            </form>
+        </div>
+        <div id="create_response" class="create_form">
+            <h2>Create response</h2>
+            <form method="post" action="/api/v1/responses" id="create_response_form">
+                <label for="response_subCategory"></label>
+                <input id="response_subCategory" name="response_subCategory" placeholder="subCategory">
+                <label for="response_topic"></label>
+                <input id="response_topic" name="response_topic" placeholder="topic">
+                <label for="response_text"></label>
+                <input id="response_text" name="response_text" placeholder="text">
+                <label for="response_additinalComments"></label>
+                <input id="response_additinalComments" name="response_additinalComments" placeholder="additinalComments">
+                <button id="creare_article" type="submit" data-route="">Submit</button>
+            </form>
+        </div>
+        <div class="articles_list"></div>
+    </main>
+
+    
+    <script src="../scripts/partials/admin_panel.js"></script>
+</body>
+<%- include('partials/footer') %>
+</html>

@@ -6,6 +6,7 @@ const pushMemUseLogs = require('./workers/newRelicData');
 const catchReqMemUse = require('./middleware/catchReqMemUse');
 const basicRouter = require('./routes/basicRoute');
 const guideRouter = require('./routes/guideRoute');
+const topicRouter = require('./routes/topicRoute');
 const responseRouter = require('./routes/responseRoute');
 const loadTestRouter = require('./routes/loadTestRoute');
 const mongoose = require('mongoose');
@@ -19,6 +20,9 @@ const path = require('path');
 //     pushMemUseLogs();
 // }
 
+app.set('view engine', 'ejs');
+
+app.set('views', path.join(__dirname, 'views'));
 
 dotenv.config({ path: './config.env'});
 
@@ -33,10 +37,11 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'static')));
 
 // app.use('api/v1/home', basicRouter);
-// app.use('/', basicRouter);
+app.use('/', basicRouter);
 if (process.env.ENVIRONMENT === 'production') {
     app.use(catchReqMemUse);
 }
+app.use('/api/v1/topics/', topicRouter);
 app.use('/api/v1/guide/', guideRouter);
 app.use('/api/v1/responses/', responseRouter);
 app.use('/memory-hog/', loadTestRouter);

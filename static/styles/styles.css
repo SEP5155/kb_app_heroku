@@ -28,21 +28,26 @@ aside {
     padding: 15px;
     overflow-y: auto;
 }
-aside ul {
+/* aside ul {
     list-style: none;
     padding: 0;
-}
-aside ul li {
+} */
+aside ul li > span,
+.netsted_menu_item {
     padding: 10px;
     cursor: pointer;
 }
-aside ul li:hover {
+aside ul li span:hover {
+    background-color: hsl(0, 0%, 33%);
+}
+.nested_menu li:hover {
     background-color: #555;
 }
-aside ul .subtopic {
+
+/* aside ul .subtopic {
     padding-left: 20px;
     display: none;
-}
+} */
 main {
     flex: 1;
     padding: 20px;
@@ -53,7 +58,49 @@ footer {
     padding: 10px;
     text-align: center;
 }
-.preview_section {
+.preview_section,
+.articles_list,
+.create_form {
     text-align: center;
     width: 100%;
+}
+.articles_list {
+    display: none;
+}
+.articles_list.active {
+    display: block;
+}
+.subtopic {
+    display: none;
+}
+.subtopic.active {
+    display: block;
+}
+.nested_menu {
+    display: none;
+}
+.nested_menu.active {
+    display: block;
+}
+#topics_menu {
+    padding-left: 1px;
+}
+.side_menu {
+    width: 50%;
+}
+.subtopic-item {
+    padding: 5px;
+}
+.subtopic {
+    padding-top: 5px;
+}
+
+/* Admin panel */
+
+.create_form {
+    display: none;
+}
+
+.create_form.active {
+    display: block;
 }

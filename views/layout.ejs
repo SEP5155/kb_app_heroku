@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Base</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/article.css">
+</head>
+<body>
+
+    <%- include('partials/header') %>
+
+    <main>
+        <aside class="side_menu">
+            <%- include('partials/aside_menu') %>
+        </aside>
+        <div class="preview_section">
+            <%- include('partials/article_section') %>
+        </div>
+    </main>
+
+    
+
+    <!-- <script src="./scripts/fetchTopics.js"></script> -->
+    <script src="../scripts/partials/aside_menu.js"></script>
+    <script src="../scripts/partials/article_body.js"></script>
+    <script>
+        const guidesData = <%- JSON.stringify(guides) %>
+        const responsesData = <%- JSON.stringify(responses) %>
+    </script>
+</body>
+<%- include('partials/footer') %>
+</html>

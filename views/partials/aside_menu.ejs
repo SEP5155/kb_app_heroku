@@ -1,0 +1,39 @@
+<ul id="topics_menu">
+    <% topicNames.forEach(item => { %>
+        <li id="<%= item %>" class="topic">
+            <span><%= item %></span>
+            <ul class="subtopic">
+                <% if (item === "guides") { %>
+                    <% filteredGuides.forEach(el => { %>
+                        <li id="<%= el.technology %>" class="subtopic-item">
+                            <span><%= el.technology %></span>
+                            <% guides.forEach(guide => { %>
+                                
+                                <% if (guide.technology === el.technology) { %>
+                                <ul class="nested_menu">
+                                    <li class="netsted_menu_item" id="<%- guide.purpose %>" data-id="<%- guide._id %>"><%- guide.purpose %></li>
+                                </ul>
+                                <% } %>
+                                
+                            <% }) %>
+                        </li>
+                    <% }) %>
+                <% } else if (item === "responses") { %>
+                    <% console.log(responses) %>
+                    <% filteredResponses.forEach(el => { %>
+                        <li id="<%= el.subCategory %>" class="subtopic-item">
+                            <span><%= el.subCategory %></span>
+                                <% responses.forEach(response => { %> 
+                                    <% if (response.subCategory === el.subCategory) { %>
+                                        <ul class="nested_menu">
+                                            <li class="netsted_menu_item" id="<%- response.topic %>" data-id="<%- response._id %>"><%- response.topic %></li>
+                                        </ul>
+                                    <% }%>     
+                                <% }) %>
+                        </li>
+                    <% }) %>
+                <% } %>
+            </ul>
+        </li>
+    <% }) %>
+</ul>

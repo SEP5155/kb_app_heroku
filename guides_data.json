@@ -1,0 +1,681 @@
+[
+    {
+        "technology": "CSS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "CSS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "CSS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "CSS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "CSS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "CSS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "CSS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "CSS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "CSS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "CSS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "CSS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "CSS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "CSS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "LInux_COMMANDS",
+        "purpose": "",
+        "command": "lsb_release -a",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "LInux_COMMANDS",
+        "purpose": "",
+        "command": "cat /etc/passwd | grep bash",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "LInux_COMMANDS",
+        "purpose": "",
+        "command": "sudo netstat -tuln",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "SonarQube",
+        "purpose": "",
+        "command": "sysctl -w vm.max_map_count=524288sysctl -w fs.file-max=131072ulimit -n 131072ulimit -u 8192",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "SonarQube",
+        "purpose": "",
+        "command": "apt install openjdk-17-jdk -y",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "SonarQube",
+        "purpose": "",
+        "command": "wget https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.9.2/apache-maven-3.9.2-bin.tar.gz",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "SonarQube",
+        "purpose": "",
+        "command": "tar xzf apache-maven-3.9.2-bin.tar.gz",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "SonarQube",
+        "purpose": "",
+        "command": "mkdir /usr/share/mavencd apache-maven-3.9.2cp -R * /usr/share/maventouch /etc/profile.d/maven.shecho 'export M2_HOME=/usr/share/maven' >>/etc/profile.d/maven.shecho 'export MAVEN_HOME=/usr/share/maven' >>/etc/profile.d/maven.shecho 'export PATH=${M2_HOME}/bin:${PATH}' >>/etc/profile.d/maven.shsource /etc/profile.d/maven.sh mvn -version ",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "SonarQube",
+        "purpose": "",
+        "command": "wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472-linux.zip",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "SonarQube",
+        "purpose": "",
+        "command": "unzip sonar-scanner-cli-4.6.2.2472-linux.zip -d /opt/sonar-scanner",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "SonarQube",
+        "purpose": "",
+        "command": "echo 'export PATH=$PATH:/opt/sonar-scanner/bin' >> ~/.bashrcsource ~/.bashrc",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "FLY_IO",
+        "purpose": "",
+        "command": "fly auth login",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "FLY_IO",
+        "purpose": "",
+        "command": "fly launch",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "FLY_IO",
+        "purpose": "",
+        "command": "fly auth token",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "FLY_IO",
+        "purpose": "",
+        "command": "fly ssh console -a <app_name>",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "FLY_IO",
+        "purpose": "",
+        "command": "fly machines list",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "FLY_IO",
+        "purpose": "",
+        "command": "fly apps list",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "FLY_IO",
+        "purpose": "",
+        "command": "fly status",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "FLY_IO",
+        "purpose": "",
+        "command": "fly logs",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "FLY_IO",
+        "purpose": "",
+        "command": "fly restart",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "FLY_IO",
+        "purpose": "",
+        "command": "fly scale count 2 ",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "FLY_IO",
+        "purpose": "",
+        "command": "fly destroy",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT-ACTIONS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT-ACTIONS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT-ACTIONS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT-ACTIONS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT-ACTIONS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT-ACTIONS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT-ACTIONS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT-ACTIONS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT-ACTIONS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT-ACTIONS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT-ACTIONS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT-ACTIONS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT-ACTIONS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT-ACTIONS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT-ACTIONS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "GIT-ACTIONS",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "DOCKER",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "Ansible",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "Ansible",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "Ansible",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "Ansible",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "Ansible",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "Ansible",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "Ansible",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "Ansible",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "Ansible",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "Ansible",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "Ansible",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "Ansible",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "heroku",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "heroku",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "heroku",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "heroku",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "heroku",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "heroku",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "heroku",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "heroku",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "heroku",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "NewRelic_queries",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "NewRelic_queries",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "NewRelic_queries",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "NewRelic_queries",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "NewRelic_queries",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "NewRelic_queries",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "NewRelic_queries",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "NewRelic_queries",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "NewRelic_queries",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "NewRelic_queries",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    },
+    {
+        "technology": "NewRelic_queries",
+        "purpose": "",
+        "command": "",
+        "example": "",
+        "comment": ""
+    }
+]
