@@ -1,14 +1,13 @@
 
 exports.memoryHogHard = (req, res) => {
-    const size = 1500000; // Размер массива (50 миллионов элементов)
+    const size = 1500000; // Array size (50 million elements)
     const largeArray = new Array(size);
 
-    // Заполняем массив большим количеством данных
+    // Filling the array with a large amount of data
     for (let i = 0; i < size; i++) {
         largeArray[i] = `Element ${i}`;
     }
 
-    // Логируем использование памяти
     // const memoryUsage = process.memoryUsage();
     const memoryUsage = process.memoryUsage();
     console.log('Memory usage:', {
@@ -16,7 +15,6 @@ exports.memoryHogHard = (req, res) => {
         rss: memoryUsage.rss / 1024 / 1024, // MB
     });
 
-    // Отправляем ответ
     res.status(200).json({
         message: 'Memory hog route executed',
         memoryUsed: `${memoryUsage.heapUsed / 1024 / 1024} MB`,
@@ -31,14 +29,12 @@ exports.memoryHogLight = async (req, res) => {
         lightArray[i] = `Element${i}`
     }
 
-    // Логируем использование памяти
     const memoryUsage = process.memoryUsage();
     console.log('Memory usage:', {
         heapUsed: memoryUsage.heapUsed / 1024 / 1024, // MB
         rss: memoryUsage.rss / 1024 / 1024, // MB
     });
 
-    // Отправляем ответ
     res.status(200).json({
         message: 'Memory hog route executed',
         memoryUsed: `${memoryUsage.heapUsed / 1024 / 1024} MB`,
@@ -52,14 +48,12 @@ exports.memoryHogModerate = async (req, res) => {
         lightArray[i] = `Element${i}`
     }
 
-    // Логируем использование памяти
     const memoryUsage = process.memoryUsage();
     console.log('Memory usage:', {
         heapUsed: memoryUsage.heapUsed / 1024 / 1024, // MB
         rss: memoryUsage.rss / 1024 / 1024, // MB
     });
 
-    // Отправляем ответ
     res.status(200).json({
         message: 'Memory hog route executed',
         memoryUsed: `${memoryUsage.heapUsed / 1024 / 1024} MB`,
