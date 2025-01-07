@@ -14,7 +14,6 @@ exports.getHomePage = async (req, res) => {
     const filteredGuides = Array.from(new Map(guides.map(item => [item.technology, item])).values());
     const filteredResponses = Array.from(new Map(responses.map(item => [item.subCategory, item])).values());
 
-    // console.log(responses);
     res.render('layout', { topicNames, guides, responses, filteredGuides, filteredResponses });
 }
 exports.getAdminPanel = (req, res) => {
