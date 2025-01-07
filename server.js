@@ -45,6 +45,10 @@ app.use('/api/v1/topics/', topicRouter);
 app.use('/api/v1/guide/', guideRouter);
 app.use('/api/v1/responses/', responseRouter);
 app.use('/memory-hog/', loadTestRouter);
+// adding artificial error
+app.get('/cause-error', (req, res, next) => {
+    throw new Error('Test Error for New Relic');
+});
 
 app.all('*', (req, res, next) => {
     res.status(404).json({
