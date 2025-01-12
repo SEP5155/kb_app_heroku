@@ -6,14 +6,19 @@ const MEMORY_THRESHOLD = 0.5; // 50% of memory use
 // Middleware for memory logging per request
 module.exports = (req, res, next) => {
     try {
-        const startMemoryUsage = process.memoryUsage(); // We save the initial state of memory
+        
 
-        const currentHeapUsage = startMemoryUsage.heapUsed / startMemoryUsage.heapTotal;
+        const currentRssUsage = process.memoryUsage().rss / (1024 * 1024); // MB
+        const maxAllowedMemory = process.env.WEB_MEMORY || 512; // Лимит памяти на Heroku
+        const memoryUsagePercentage = currentRssUsage / maxAllowedMemory;
 
-        if (currentHeapUsage > MEMORY_THRESHOLD) {
-                console.log(parseFloat(((currentHeapUsage) / 1024 / 1024).toFixed(2)) + 'Do not proceed with mmory usgae loging since threshold exeeded');
-                return next();
+        if (memoryUsagePercentage > MEMORY_THRESHOLD) {
+            // Если использование памяти выше 50%, не запускаем middleware
+            console.warn(`Memory usage is too high (${(memoryUsagePercentage * 100).toFixed(2)}%). Skipping logging.`);
+            return next();
         }
+        
+        const startMemoryUsage = process.memoryUsage(); // We save the initial state of memory
 
         res.on('finish', () => {    
             try {
