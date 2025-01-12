@@ -11,7 +11,7 @@ module.exports = (req, res, next) => {
         const currentHeapUsage = startMemoryUsage.heapUsed / startMemoryUsage.heapTotal;
 
         if (currentHeapUsage > MEMORY_THRESHOLD) {
-                console.log(currentHeapUsage + 'Do not proceed with mmory usgae loging since threshold exeeded');
+                console.log(parseFloat(((currentHeapUsage) / 1024 / 1024).toFixed(2)) + 'Do not proceed with mmory usgae loging since threshold exeeded');
                 return next();
         }
 
