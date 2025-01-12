@@ -6,13 +6,13 @@ exports.config = {
     logging: {
         level: 'info', // Уровень логирования
     },
-    distributed_tracing: {
-        enabled: true, // Включение распределенного трейсинга
-    },
-    transaction_tracer: {
-        enabled: true,
-        transaction_threshold: 'apdex_f', // Запись медленных транзакций
-    },
+    // distributed_tracing: {
+    //     enabled: true, // Включение распределенного трейсинга
+    // },
+    // transaction_tracer: {
+    //     enabled: true,
+    //     transaction_threshold: 'apdex_f', // Запись медленных транзакций
+    // },
     error_collector: {
         enabled: true,
         ignore_status_codes: [404], // Игнорирование 404-х ошибок
