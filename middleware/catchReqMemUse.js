@@ -17,6 +17,7 @@ module.exports = (req, res, next) => {
 
         res.on('finish', () => {    
             try {
+                console.log(parseFloat(((currentHeapUsage) / 1024 / 1024).toFixed(2)) + 'proceeding with memory check');
                  // Saving the memory state after processing a request
                 const endMemoryUsage = process.memoryUsage();
 
