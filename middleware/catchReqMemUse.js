@@ -9,11 +9,11 @@ module.exports = (req, res, next) => {
         
 
         const currentRssUsage = process.memoryUsage().rss / (1024 * 1024); // MB
-        const maxAllowedMemory = process.env.WEB_MEMORY || 512; // Лимит памяти на Heroku
+        const maxAllowedMemory = process.env.WEB_MEMORY || 512; // Heroku Memory Limit
         const memoryUsagePercentage = currentRssUsage / maxAllowedMemory;
 
         if (memoryUsagePercentage > MEMORY_THRESHOLD) {
-            // Если использование памяти выше 50%, не запускаем middleware
+            // If memory usage is above 50%, don't run middleware
             console.warn(`Memory usage is too high (${(memoryUsagePercentage * 100).toFixed(2)}%). Skipping logging.`);
             return next();
         }
@@ -22,7 +22,7 @@ module.exports = (req, res, next) => {
 
         res.on('finish', () => {    
             try {
-                console.log(memoryUsagePercentage + 'proceeding with memory check');
+                console.log(memoryUsagePercentage + ' proceeding with memory check');
                  // Saving the memory state after processing a request
                 const endMemoryUsage = process.memoryUsage();
 
