@@ -1,0 +1,20 @@
+.create_form {
+    display: none;
+}
+
+.create_form.active {
+    display: block;
+}
+.create_form {
+    width: 100%;
+    padding: 25px 15px 0 15px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 10px;
+    border-radius: 5px;
+}

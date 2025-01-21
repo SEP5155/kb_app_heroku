@@ -1,0 +1,15 @@
+.article_part {
+    margin-top: 15px;
+}
+.article_part {
+    text-align: left;
+    margin-left: 10px;
+}
+.article_part > .command,
+.article_part > .example {
+    font-style: italic;
+}
+.article_part > span {
+    padding-left: 20px;
+    padding-top: 20px;
+}

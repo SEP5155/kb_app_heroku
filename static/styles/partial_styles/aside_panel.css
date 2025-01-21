@@ -1,0 +1,34 @@
+aside {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+aside ul li > span,
+.netsted_menu_item {
+    padding: 10px;
+    cursor: pointer;
+}
+aside ul li span:hover {
+    background-color: hsl(0, 0%, 33%);
+}
+.nested_menu li:hover {
+    background-color: #555;
+}
+
+.subtopic,
+.netsted_menu_item,
+.admin_action.type-add,
+.admin_action.type-edit {
+    margin-left: 15px;
+    list-style: inside;
+}
+
+.subtopic-item:hover,
+.netsted_menu_item:hover,
+.admin_action.type-add:hover,
+.admin_action.type-edit:hover {
+    transform: scale(1.2);
+}
