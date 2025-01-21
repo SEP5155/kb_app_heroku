@@ -15,9 +15,6 @@ aside ul li {
     padding: 10px;
     cursor: pointer;
 }
-aside ul li:hover {
-    background-color: #555;
-}
 
 .articles_list {
     text-align: left;

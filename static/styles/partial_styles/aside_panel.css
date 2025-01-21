@@ -11,19 +11,15 @@ aside ul li > span,
     padding: 10px;
     cursor: pointer;
 }
-aside ul li span:hover {
-    background-color: hsl(0, 0%, 33%);
-}
-.nested_menu li:hover {
-    background-color: #555;
-}
 
-.subtopic,
+.subtopic-item,
 .netsted_menu_item,
 .admin_action.type-add,
 .admin_action.type-edit {
     margin-left: 15px;
     list-style: inside;
+    transition: transform 0.3s ease;
+    transform-origin: left;
 }
 
 .subtopic-item:hover,
