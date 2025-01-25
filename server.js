@@ -38,7 +38,7 @@ app.use(express.static(path.join(__dirname, 'static')));
 
 // app.use('api/v1/home', basicRouter);
 app.use('/', basicRouter);
-if (process.env.ENVIRONMENT === 'production') {
+if (process.env.ENVIRONMENT === 'production' && process.env.RUN_MEMORY_CHECK !== 'false') {
     app.use(catchReqMemUse);
 }
 app.use('/api/v1/topics/', topicRouter);
