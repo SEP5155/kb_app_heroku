@@ -9,6 +9,7 @@ const guideRouter = require('./routes/guideRoute');
 const topicRouter = require('./routes/topicRoute');
 const responseRouter = require('./routes/responseRoute');
 const loadTestRouter = require('./routes/loadTestRoute');
+const testQueryDataRouter = require('./routes/testQueryDataRoute');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const app = express();
@@ -38,12 +39,13 @@ app.use(express.static(path.join(__dirname, 'static')));
 
 // app.use('api/v1/home', basicRouter);
 app.use('/', basicRouter);
-if (process.env.ENVIRONMENT === 'production') {
+if (process.env.ENVIRONMENT === 'production' && process.env.RUN_MEMORY_CHECK !== 'false') {
     app.use(catchReqMemUse);
 }
 app.use('/api/v1/topics/', topicRouter);
 app.use('/api/v1/guide/', guideRouter);
 app.use('/api/v1/responses/', responseRouter);
+app.use('/api/v1/test/', testQueryDataRouter);
 app.use('/memory-hog/', loadTestRouter);
 // adding artificial error
 app.get('/cause-error', (req, res, next) => {
