@@ -17,7 +17,7 @@ module.exports = (req, res, next) => {
         // cutting the route
         const parceUrl = url.parse(req.originalUrl);
         const routePath = parceUrl.pathname;
-        const queryParams = parsedUrl.query ? parsedUrl.query.toString() : '';
+        const queryParams = parceUrl.query ? parceUrl.query.toString() : '';
 
         if (memoryUsagePercentage > MEMORY_THRESHOLD && process.env.USE_MEMORY_LIMIT === "true") {
             // If memory usage is above 50%, don't run middleware
