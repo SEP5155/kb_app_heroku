@@ -13,41 +13,16 @@ header {
     padding: 10px;
     background-color: #f1f1f1;
 }
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
 #search {
     flex: 1;
     padding: 5px;
     margin-right: 10px;
 }
-#admin-panel {
-    cursor: pointer;
-}
-aside {
-    width: 250px;
-    background-color: #333;
-    color: white;
-    padding: 15px;
-    overflow-y: auto;
-}
-/* aside ul {
-    list-style: none;
-    padding: 0;
-} */
-aside ul li > span,
-.netsted_menu_item {
-    padding: 10px;
-    cursor: pointer;
-}
-aside ul li span:hover {
-    background-color: hsl(0, 0%, 33%);
-}
-.nested_menu li:hover {
-    background-color: #555;
-}
 
-/* aside ul .subtopic {
-    padding-left: 20px;
-    display: none;
-} */
 main {
     flex: 1;
     padding: 20px;
@@ -58,6 +33,7 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
 .preview_section,
 .articles_list,
 .create_form {
@@ -93,14 +69,4 @@ footer {
 }
 .subtopic {
     padding-top: 5px;
-}
-
-/* Admin panel */
-
-.create_form {
-    display: none;
-}
-
-.create_form.active {
-    display: block;
 }

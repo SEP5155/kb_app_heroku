@@ -51,10 +51,10 @@ document.addEventListener('DOMContentLoaded', () => {
             articlesContainer.innerHTML = '';
 
             const dataToRender = route === '/api/v1/guide/'
-                ? result.guides.map(item => `<li>${item.technology } - ${item.command}</li>`)
+                ? result.guides.map(item => `<li><span>${item.technology } - ${item.command}</span></li>`)
                 : route === '/api/v1/responses/'
                     ? result.data
-                    .map(item => `<li>${item.topic}</li>`)
+                    .map(item => `<li><span>${item.topic}</span></li>`)
                     : [];
             articlesContainer.innerHTML = dataToRender.join('');
             articlesContainer.classList.add('active');
