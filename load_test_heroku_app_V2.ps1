@@ -26,7 +26,7 @@ $BaseUrl = "https://kb-app-heroku-80283ca5f138.herokuapp.com"
 $StandardRoutes = @("/", "/api/v1/guide", "/api/v1/responses")
 $MemoryHogLightRoutes = @("/memory-hog/light", "/memory-hog/moderate")
 $MemoryHogModerateRoute = "/memory-hog"
-$QueryRoutes = ("/api/v1/test/test-query?id=123&type=example", "api/v1/test/test-query?id=1234&type=example1", "api/v1/test/test-query?id=987&type=example3")
+$QueryRoutes = ("/api/v1/test/test-query?id=123&type=example", "/api/v1/test/test-query?id=1234&type=example1", "/api/v1/test/test-query?id=987&type=example3")
 
 $StandardRequestsPerRoute = 150
 $MemoryHogLightRequests = 50
