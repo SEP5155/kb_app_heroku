@@ -15,9 +15,9 @@ module.exports = (req, res, next) => {
 
         // cutting the route
         const protocol = req.protocol;
-        const parcedUrl = new URL(req.original, `${protocol}${req.headers.host}`)
+        const parcedUrl = new URL(req.original, `${protocol}://${req.headers.host}`)
         const routePath = parcedUrl.pathname;
-        const queryParams = parcedUrl.searchParams.toString();
+        const queryParams = parcedUrl.searchParams.toString() || null;
 
         if (memoryUsagePercentage > MEMORY_THRESHOLD && process.env.USE_MEMORY_LIMIT === "true") {
             // If memory usage is above 50%, don't run middleware
@@ -29,7 +29,6 @@ module.exports = (req, res, next) => {
 
         res.on('finish', () => {    
             try {
-                console.log(memoryUsagePercentage + ' proceeding with memory check');
                  // Saving the memory state after processing a request
                 const endMemoryUsage = process.memoryUsage();
 
