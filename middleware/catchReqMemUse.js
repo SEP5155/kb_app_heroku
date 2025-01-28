@@ -1,5 +1,6 @@
 const newrelic = require('newrelic');
 const url = require('url');
+const { URL } = require('url');
 
 const MEMORY_THRESHOLD = 0.5; // 50% of memory use
 
@@ -9,15 +10,15 @@ const MEMORY_THRESHOLD = 0.5; // 50% of memory use
 module.exports = (req, res, next) => {
     try {
         
-
         const currentRssUsage = process.memoryUsage().rss / (1024 * 1024); // MB
         const maxAllowedMemory = process.env.WEB_MEMORY || 512; // Heroku Memory Limit
         const memoryUsagePercentage = currentRssUsage / maxAllowedMemory;
 
         // cutting the route
-        const parceUrl = url.parse(req.originalUrl);
-        const routePath = parceUrl.pathname;
-        const queryParams = parceUrl.query ? parceUrl.query.toString() : '';
+        const protocol = req.protocol;
+        const parcedUrl = new URL(req.original, `${protocol}${req.headers.host}`)
+        const routePath = parcedUrl.pathname;
+        const queryParams = parcedUrl.searchParams.toString();
 
         if (memoryUsagePercentage > MEMORY_THRESHOLD && process.env.USE_MEMORY_LIMIT === "true") {
             // If memory usage is above 50%, don't run middleware
