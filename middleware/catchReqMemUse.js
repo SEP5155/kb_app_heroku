@@ -1,5 +1,4 @@
 const newrelic = require('newrelic');
-const url = require('url');
 const { URL } = require('url');
 
 const MEMORY_THRESHOLD = 0.5; // 50% of memory use
