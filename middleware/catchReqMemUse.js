@@ -18,6 +18,7 @@ module.exports = (req, res, next) => {
         const parcedUrl = new URL(req.original, `${protocol}://${req.headers.host}`)
         const routePath = parcedUrl.pathname;
         const queryParams = parcedUrl.searchParams.toString() || "";
+        console.log('prorocol' + req.protocol + 'parcedUrl: ' + `${parcedUrl}`);
 
         if (memoryUsagePercentage > MEMORY_THRESHOLD && process.env.USE_MEMORY_LIMIT === "true") {
             // If memory usage is above 50%, don't run middleware
