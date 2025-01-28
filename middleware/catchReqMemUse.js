@@ -15,7 +15,7 @@ module.exports = (req, res, next) => {
 
         // cutting the route
         const protocol = req.protocol;
-        const parcedUrl = new URL(req.original, `${protocol}://${req.headers.host}`)
+        const parcedUrl = new URL(req.originalUrl, `${protocol}://${req.headers.host}`)
         const routePath = parcedUrl.pathname;
         const queryParams = parcedUrl.searchParams.toString() || "";
         console.log('prorocol ' + req.protocol + 'parcedUrl: ' + `${parcedUrl}, req.headers.host: ` + req.headers.host + 'req.original: ' + req.original);
