@@ -10,10 +10,10 @@ exports.memoryHogHard = (req, res) => {
 
     // const memoryUsage = process.memoryUsage();
     const memoryUsage = process.memoryUsage();
-    console.log('Memory usage:', {
-        heapUsed: memoryUsage.heapUsed / 1024 / 1024, // MB
-        rss: memoryUsage.rss / 1024 / 1024, // MB
-    });
+    // console.log('Memory usage:', {
+    //     heapUsed: memoryUsage.heapUsed / 1024 / 1024, // MB
+    //     rss: memoryUsage.rss / 1024 / 1024, // MB
+    // });
 
     res.status(200).json({
         message: 'Memory hog route executed',
@@ -30,10 +30,10 @@ exports.memoryHogLight = async (req, res) => {
     }
 
     const memoryUsage = process.memoryUsage();
-    console.log('Memory usage:', {
-        heapUsed: memoryUsage.heapUsed / 1024 / 1024, // MB
-        rss: memoryUsage.rss / 1024 / 1024, // MB
-    });
+    // console.log('Memory usage:', {
+    //     heapUsed: memoryUsage.heapUsed / 1024 / 1024, // MB
+    //     rss: memoryUsage.rss / 1024 / 1024, // MB
+    // });
 
     res.status(200).json({
         message: 'Memory hog route executed',
@@ -49,10 +49,10 @@ exports.memoryHogModerate = async (req, res) => {
     }
 
     const memoryUsage = process.memoryUsage();
-    console.log('Memory usage:', {
-        heapUsed: memoryUsage.heapUsed / 1024 / 1024, // MB
-        rss: memoryUsage.rss / 1024 / 1024, // MB
-    });
+    // console.log('Memory usage:', {
+    //     heapUsed: memoryUsage.heapUsed / 1024 / 1024, // MB
+    //     rss: memoryUsage.rss / 1024 / 1024, // MB
+    // });
 
     res.status(200).json({
         message: 'Memory hog route executed',
