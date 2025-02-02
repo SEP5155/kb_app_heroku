@@ -34,8 +34,8 @@ $MemoryHogModerateRequests = 15
 $QueryRoutesRequests = 100
 
 $StandardInterval = 2
-$MemoryHogLightInterval = 5
-$MemoryHogModerateInterval = 12
+$MemoryHogLightInterval = 4
+$MemoryHogModerateInterval = 11
 $QueryRoutesInterval = 2
 
 # Start jobs for each function

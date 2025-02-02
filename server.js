@@ -41,6 +41,9 @@ app.use(express.static(path.join(__dirname, 'static')));
 app.use('/', basicRouter);
 if (process.env.ENVIRONMENT === 'production' && process.env.RUN_MEMORY_CHECK !== 'false') {
     app.use(catchReqMemUse);
+    console.log('MEMORY CHECK is RUNNING!!!');
+} else {
+    console.log('MEMORY CHECK NOT RUNNING!!!');
 }
 app.use('/api/v1/topics/', topicRouter);
 app.use('/api/v1/guide/', guideRouter);
