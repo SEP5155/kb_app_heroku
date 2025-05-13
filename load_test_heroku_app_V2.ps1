@@ -30,12 +30,12 @@ $QueryRoutes = ("/api/v1/test/test-query?id=123&type=example", "/api/v1/test/tes
 
 $StandardRequestsPerRoute = 150
 $MemoryHogLightRequests = 50
-$MemoryHogModerateRequests = 15
+$MemoryHogModerateRequests = 30
 $QueryRoutesRequests = 100
 
 $StandardInterval = 2
 $MemoryHogLightInterval = 4
-$MemoryHogModerateInterval = 11
+$MemoryHogModerateInterval = 8
 $QueryRoutesInterval = 2
 
 # Start jobs for each function
